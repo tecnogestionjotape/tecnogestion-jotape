@@ -366,3 +366,64 @@ section{
     }
 
 }
+/* ==========================
+   CONTACTO
+========================== */
+
+.contacto{
+    background:#0B1320;
+    padding:120px 8%;
+}
+
+.contacto h2{
+    color:#F8FAFC;
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.contacto-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:60px;
+}
+
+.contacto-card{
+    background:#111827;
+    padding:40px;
+    border-radius:18px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:.3s;
+}
+
+.contacto-card:hover{
+    transform:translateY(-8px);
+    border-color:#F97316;
+}
+
+.contacto-card h3{
+    color:#F8FAFC;
+    margin-bottom:10px;
+}
+
+.contacto-card p{
+    color:#94A3B8;
+    margin-bottom:20px;
+}
+
+.contacto-card a{
+    display:inline-block;
+    background:#F97316;
+    color:#0F172A;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.contacto-card a:hover{
+    transform:translateY(-3px);
+}
