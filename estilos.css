@@ -10,7 +10,6 @@
 
 html{
     scroll-behavior:smooth;
-    scroll-padding-top:160px;
 }
 
 body{
@@ -19,11 +18,18 @@ body{
 }
 
 /* ==========================
+   SCROLL FIX GLOBAL (IMPORTANTE)
+========================== */
+
+section{
+    scroll-margin-top:160px;
+}
+
+/* ==========================
    HEADER
 ========================== */
 
 .header{
-
     width:100%;
     display:flex;
     justify-content:space-between;
@@ -34,7 +40,6 @@ body{
     top:0;
     z-index:1000;
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
-
 }
 
 .logo img{
@@ -42,15 +47,12 @@ body{
 }
 
 .menu{
-
     display:flex;
     gap:35px;
     list-style:none;
-
 }
 
 .menu a{
-
     text-decoration:none;
     color:#2F3A4A;
     font-size:15px;
@@ -59,13 +61,10 @@ body{
 }
 
 .menu a:hover{
-
     color:#F97316;
-
 }
 
 .btn-whatsapp{
-
     text-decoration:none;
     background:#F97316;
     color:white;
@@ -76,9 +75,7 @@ body{
 }
 
 .btn-whatsapp:hover{
-
     transform:translateY(-2px);
-
 }
 
 /* ==========================
@@ -86,7 +83,6 @@ body{
 ========================== */
 
 .hero{
-
     min-height:85vh;
     display:flex;
     flex-direction:column;
@@ -96,7 +92,6 @@ body{
 }
 
 .hero-grid{
-
     display:grid;
     grid-template-columns:1.3fr 1fr;
     gap:80px;
@@ -104,7 +99,6 @@ body{
 }
 
 .hero-izquierda h1{
-
     color:#F8FAFC;
     font-size:5.5rem;
     font-weight:800;
@@ -113,13 +107,10 @@ body{
 }
 
 .hero-lista{
-
     list-style:none;
-
 }
 
 .hero-lista li{
-
     color:#CBD5E1;
     font-size:1.25rem;
     margin-bottom:24px;
@@ -127,7 +118,6 @@ body{
 }
 
 .hero-botones{
-
     display:flex;
     gap:20px;
     margin-top:60px;
@@ -139,7 +129,6 @@ body{
 ========================== */
 
 .btn-principal{
-
     display:inline-block;
     background:#F97316;
     color:#0F172A;
@@ -152,12 +141,10 @@ body{
 }
 
 .btn-principal:hover{
-
     transform:translateY(-3px);
 }
 
 .btn-secundario{
-
     display:inline-block;
     border:2px solid #F97316;
     color:#F97316;
@@ -174,21 +161,12 @@ body{
 }
 
 /* ==========================
-   SECCIONES
-========================== */
-
-section{
-    min-height:100vh;
-}
-
-/* ==========================
    RESPONSIVE
 ========================== */
 
 @media(max-width:900px){
 
     .header{
-
         flex-direction:column;
         gap:20px;
         padding:20px;
@@ -199,14 +177,12 @@ section{
     }
 
     .menu{
-
         flex-wrap:wrap;
         justify-content:center;
         gap:15px;
     }
 
     .hero-grid{
-
         grid-template-columns:1fr;
         gap:40px;
         text-align:center;
@@ -223,7 +199,6 @@ section{
     .hero-botones{
         justify-content:center;
     }
-
 }
 
 /* ==========================
@@ -231,21 +206,16 @@ section{
 ========================== */
 
 .servicios{
-
     background:#111827;
     padding:120px 8%;
-    min-height:auto;
 }
 
 .contenedor{
-
     max-width:1200px;
     margin:auto;
-
 }
 
 .servicios h2{
-
     color:#F8FAFC;
     text-align:center;
     font-size:3rem;
@@ -253,7 +223,6 @@ section{
 }
 
 .subtitulo{
-
     text-align:center;
     color:#94A3B8;
     margin-bottom:70px;
@@ -261,20 +230,17 @@ section{
 }
 
 .servicios-grid{
-
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
 }
 
 .card-servicio{
-
-    background: #151f30;
+    background:#151f30;
     padding:35px;
     border-radius:18px;
     transition:.3s;
     border:1px solid rgba(255,255,255,0.05);
-
 }
 
 .card-servicio:hover{
@@ -296,37 +262,6 @@ section{
 .card-servicio p{
     color:#CBD5E1;
     line-height:1.8;
-}
-
-/* ==========================
-   VOLVER ARRIBA
-========================== */
-
-.volver-arriba{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    width:75px;
-    height:75px;
-    background:#F97316;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    box-shadow:0 8px 25px rgba(0,0,0,.35);
-    z-index:9999;
-    transition:.3s;
-}
-
-.volver-arriba svg{
-    width:38px;
-    height:38px;
-    color:#FFFFFF;
-}
-
-.volver-arriba:hover{
-    transform:translateY(-6px);
 }
 
 /* ==========================
@@ -360,12 +295,11 @@ section{
     from{
         transform:translateX(0);
     }
-
     to{
         transform:translateX(-50%);
     }
-
 }
+
 /* ==========================
    CONTACTO
 ========================== */
@@ -426,4 +360,35 @@ section{
 
 .contacto-card a:hover{
     transform:translateY(-3px);
+}
+
+/* ==========================
+   VOLVER ARRIBA
+========================== */
+
+.volver-arriba{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:75px;
+    height:75px;
+    background:#F97316;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+    z-index:9999;
+    transition:.3s;
+}
+
+.volver-arriba svg{
+    width:38px;
+    height:38px;
+    color:#FFFFFF;
+}
+
+.volver-arriba:hover{
+    transform:translateY(-6px);
 }
