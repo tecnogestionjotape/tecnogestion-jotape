@@ -337,6 +337,10 @@ section{
     min-height:240px;
 }
 
+.contacto-card p{
+    min-height:40px;
+}
+
 .contacto-card:hover{
     transform:translateY(-8px);
     border-color:#F97316;
