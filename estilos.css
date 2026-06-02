@@ -419,8 +419,12 @@ section{
 }
 
 .sobre-mi-contenido{
-    max-width:900px;
+    max-width:1000px;
     margin:0 auto;
+}
+
+.sobre-mi-texto{
+    margin-bottom:70px;
 }
 
 .sobre-mi-texto p{
@@ -429,4 +433,45 @@ section{
     line-height:2;
     margin-bottom:25px;
     text-align:center;
+}
+
+.sobre-mi-datos{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.dato{
+    background:#151f30;
+    border:1px solid rgba(255,255,255,0.05);
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.dato:hover{
+    transform:translateY(-6px);
+    border-color:#F97316;
+}
+
+.dato span{
+    display:block;
+    color:#F97316;
+    font-size:2rem;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.dato p{
+    color:#CBD5E1;
+    font-size:1rem;
+}
+
+@media(max-width:900px){
+
+    .sobre-mi-datos{
+        grid-template-columns:1fr;
+    }
+
 }
