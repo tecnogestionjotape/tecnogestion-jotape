@@ -430,15 +430,15 @@ section{
 .sobre-mi-texto p{
     color:#CBD5E1;
     font-size:1.1rem;
-    line-height:2;
-    margin-bottom:25px;
+    line-height:1.7;
+    margin-bottom:18px;
     text-align:center;
 }
 
 .sobre-mi-datos{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
 }
 
 .dato{
