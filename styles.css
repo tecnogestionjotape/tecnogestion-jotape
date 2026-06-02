@@ -218,3 +218,101 @@ h1 span {
     font-weight: 800;
     font-size: 1rem;
 }
+
+/* --- SECCIÓN SERVICIOS --- */
+.services-section {
+    padding: 100px 80px 180px 80px; /* Margen inferior amplio para dar espacio a la barra flotante */
+    background: radial-gradient(circle at 10% 30%, rgba(0, 163, 255, 0.03) 0%, transparent 50%);
+}
+
+.services-header {
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.services-tagline {
+    color: var(--orange);
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.services-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.services-header h2 span {
+    color: var(--blue-cyan);
+}
+
+/* Grilla de tarjetas */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Tarjeta individual */
+.service-card {
+    background: rgba(6, 18, 36, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 163, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(3, 8, 18, 0.5), 0 0 20px rgba(0, 163, 255, 0.05);
+}
+
+/* Iconos de los servicios */
+.service-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.service-icon.orange {
+    background: rgba(255, 92, 0, 0.1);
+    color: var(--orange);
+    border: 1px solid rgba(255, 92, 0, 0.2);
+}
+
+.service-icon.blue {
+    background: rgba(0, 163, 255, 0.1);
+    color: var(--blue-cyan);
+    border: 1px solid rgba(0, 163, 255, 0.2);
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.service-card p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Pequeño ajuste para que la barra inferior no se rompa al hacer scroll */
+.features-bar {
+    position: relative;
+    margin: -80px 80px 40px 80px;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
