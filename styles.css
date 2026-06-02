@@ -3,11 +3,10 @@
     --orange: #ff5c00;
     --blue-cyan: #00a3ff;
     --text-gray: #94a3b8;
-    --glass: rgba(6, 18, 36, 0.7);
+    --glass: rgba(6, 18, 36, 0.75);
     --border-color: rgba(255, 255, 255, 0.08);
 }
 
-/* Permitir scroll suave en todo el documento */
 html {
     scroll-behavior: smooth;
 }
@@ -19,10 +18,22 @@ html {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+/* 1. CONFIGURACIÓN DEL FONDO GLOBAL FIJO */
 body {
-    background-color: var(--bg-dark);
+    background: linear-gradient(90deg, var(--bg-dark) 30%, rgba(3, 8, 18, 0.6) 60%, rgba(3, 8, 18, 0.3) 100%), 
+                url('img/fondohero.png'); 
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed; /* Mantiene la imagen inmóvil al scrollear */
     color: white;
     overflow-x: hidden;
+}
+
+/* Contenedor general transparente */
+.site-container {
+    background: transparent;
+    position: relative;
+    z-index: 2;
 }
 
 /* HEADER FIJO */
@@ -36,8 +47,10 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: linear-gradient(to bottom, rgba(3, 8, 18, 0.8), transparent);
-    backdrop-filter: blur(5px);
+    background: rgba(3, 8, 18, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .logo {
@@ -101,25 +114,17 @@ nav ul li a.active, nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* HERO SECTION CON EFECTO PARALLAX */
+/* HERO SECTION TOTALMENTE TRANSPARENTE */
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 80px;
-    /* Un degradado oscuro sutil a la izquierda para garantizar la lectura del texto */
-    background: linear-gradient(90deg, var(--bg-dark) 40%, rgba(3, 8, 18, 0.5) 70%, rgba(3, 8, 18, 0.1) 100%), 
-                url('img/fondohero.png'); 
-    background-size: cover;
-    background-position: center right;
-    background-attachment: fixed; /* CONGELA LA IMAGEN DE FONDO */
-    position: relative;
-    z-index: 1;
+    background: transparent; /* No tiene fondo propio, usa el del body */
 }
 
 .hero-content {
     max-width: 650px;
-    margin-top: 40px;
 }
 
 .tagline {
@@ -190,27 +195,110 @@ h1 span {
     transform: translateY(-2px);
 }
 
-/* WRAPPER DEL CONTENIDO INFERIOR */
-.main-content-wrapper {
-    position: relative;
-    z-index: 2; /* Se posiciona sobre el hero fixed */
-    background: var(--bg-dark); /* Color sólido para tapar el fondo cuando sube */
-    padding-top: 1px; /* Evita colapso de márgenes */
+/* SECCIÓN SERVICIOS TRANSPARENTE */
+.services-section {
+    padding: 100px 80px;
+    background: transparent;
 }
 
-/* BARRA DE CARACTERÍSTICAS INTEGRADA */
+.services-header {
+    margin-bottom: 60px;
+}
+
+.services-tagline {
+    color: var(--orange);
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.services-header h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.services-header h2 span {
+    color: var(--blue-cyan);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* Tarjeta estilo cristal */
+.service-card {
+    background: rgba(6, 18, 36, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 163, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.service-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.service-icon.orange {
+    background: rgba(255, 92, 0, 0.1);
+    color: var(--orange);
+    border: 1px solid rgba(255, 92, 0, 0.25);
+}
+
+.service-icon.blue {
+    background: rgba(0, 163, 255, 0.1);
+    color: var(--blue-cyan);
+    border: 1px solid rgba(0, 163, 255, 0.25);
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.service-card p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* 2. BARRA DE CARACTERÍSTICAS DINÁMICA (STICKY) */
 .features-bar {
-    margin: -50px 80px 0 80px; /* Sube un poco para solaparse elegantemente con el hero */
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 25px; /* Se congela a 25px del borde inferior de la pantalla */
+    margin: 40px 80px;
     background: var(--glass);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     border: 1px solid var(--border-color);
     border-radius: 24px;
-    padding: 30px 40px;
+    padding: 25px 40px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Por encima de las tarjetas pero abajo del header */
 }
 
 .feature-item {
@@ -270,97 +358,14 @@ h1 span {
     flex-direction: column;
 }
 
-/* SECCIÓN SERVICIOS PREMIUM */
-.services-section {
-    padding: 80px 80px 100px 80px;
-}
-
-.services-header {
-    margin-bottom: 60px;
-}
-
-.services-tagline {
-    color: var(--orange);
-    font-weight: 800;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.services-header h2 {
-    font-size: 2.6rem;
-    font-weight: 800;
-    line-height: 1.2;
-}
-
-.services-header h2 span {
-    color: var(--blue-cyan);
-}
-
-/* Grilla Correcta para Tarjetas */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-}
-
-/* Tarjeta de Servicio Estilo Vidrio Cristal */
-.service-card {
-    background: rgba(6, 18, 36, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
-    border-radius: 20px;
-    padding: 40px;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(0, 163, 255, 0.25);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 163, 255, 0.05);
-}
-
-.service-icon {
-    width: 54px;
-    height: 54px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-}
-
-.service-icon.orange {
-    background: rgba(255, 92, 0, 0.1);
-    color: var(--orange);
-    border: 1px solid rgba(255, 92, 0, 0.25);
-}
-
-.service-icon.blue {
-    background: rgba(0, 163, 255, 0.1);
-    color: var(--blue-cyan);
-    border: 1px solid rgba(0, 163, 255, 0.25);
-}
-
-.service-card h3 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: white;
-    letter-spacing: -0.3px;
-}
-
-.service-card p {
-    color: var(--text-gray);
-    font-size: 0.95rem;
-    line-height: 1.7;
-}
-
 /* RESPONSIVE BÁSICO */
 @media (max-width: 1200px) {
-    .features-bar { grid-template-columns: repeat(2, 1fr); gap: 20px; margin: -50px 20px 0 20px; }
+    .features-bar { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        margin: 20px; 
+        bottom: 15px;
+    }
     .feature-item:not(:last-child) { border-right: none; }
     header, .hero, .services-section { padding-left: 30px; padding-right: 30px; }
 }
