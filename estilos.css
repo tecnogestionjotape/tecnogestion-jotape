@@ -439,6 +439,7 @@ section{
     display:grid;
     grid-template-columns:repeat(5,1fr);
     gap:20px;
+    align-items:stretch;
 }
 
 .dato{
@@ -452,8 +453,15 @@ section{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    align-items:center;
 
-    min-height:170px;
+    min-height:180px;
+    height:100%;
+}
+
+.dato:hover{
+    transform:translateY(-6px);
+    border-color:#F97316;
 }
 
 .dato span{
@@ -461,7 +469,8 @@ section{
     color:#F97316;
     font-size:2rem;
     font-weight:800;
-    margin-bottom:12px;
+    margin-bottom:15px;
+    line-height:1.1;
 }
 
 .dato p{
@@ -469,6 +478,15 @@ section{
     font-size:1rem;
     line-height:1.4;
     margin:0;
+    max-width:140px;
+}
+
+@media(max-width:900px){
+
+    .sobre-mi-datos{
+        grid-template-columns:1fr;
+    }
+
 }
 
 @media(max-width:900px){
