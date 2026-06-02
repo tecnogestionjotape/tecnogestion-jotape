@@ -401,3 +401,32 @@ section{
 .volver-arriba:hover{
     transform:translateY(-6px);
 }
+
+/* ==========================
+   SOBRE MI
+========================== */
+
+.sobre-mi{
+    background:#111827;
+    padding:120px 8%;
+}
+
+.sobre-mi h2{
+    color:#F8FAFC;
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.sobre-mi-contenido{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.sobre-mi-texto p{
+    color:#CBD5E1;
+    font-size:1.1rem;
+    line-height:2;
+    margin-bottom:25px;
+    text-align:center;
+}
