@@ -1,363 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>TecnoGestión JotaPe</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="estilos.css">
+    <title>TecnoGestión JotaPe - Soluciones Tecnológicas</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header class="header">
-
-        <div class="logo">
-            <img src="img/logo.png" alt="TecnoGestión JotaPe">
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line><line x1="9" y1="15" x2="9.01" y2="15"></line><line x1="15" y1="15" x2="15.01" y2="15"></line></svg>
+            </div>
+            <div class="logo-text">
+                <h1>TecnoGestión <span>JotaPe</span></h1>
+                <p>Soluciones Inteligentes, Soporte Confiable</p>
+            </div>
         </div>
-
+        
         <nav>
-            <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#software">Software</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul>
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
 
-        <a href="https://wa.me/5493492664153?text=Hola%20TecnoGestión%20JotaPe,%20necesito%20información" target="_blank" class="btn-whatsapp">
-    WhatsApp
-</a>
-
+        <a href="https://wa.me/tu-numero" class="btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
     </header>
 
     <main>
-
-        <section id="inicio" class="hero">
-
-    <div class="hero-grid">
-
-        <div class="hero-izquierda">
-
-            <h1>
-                SOLUCIONES<br>
-                TECNOLÓGICAS<br>
-                REALES
-            </h1>
-
-        </div>
-
-        <div class="hero-derecha">
-
-            <ul class="hero-lista">
-
-                <li>✓ Más de 20 años de experiencia</li>
-
-                <li>✓ Atención Personalizada</li>
-
-                <li>✓ Soporte Remoto y Presencial</li>
-
-                <li>✓ Desarrollo de Software a Medida</li>
-
-                <li>✓ Redes y Conectividad</li>
-
-                <li>✓ Reparación de PC e Impresoras</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <div class="hero-botones">
-
-        <a href="#contacto" class="btn-principal">
-            Solicitar asistencia
-        </a>
-
-        <a href="#servicios" class="btn-secundario">
-            Ver servicios
-        </a>
-
-    </div>
-
-</section>
-
-        <section id="servicios" class="servicios">
-
-    <div class="contenedor">
-
-        <h2>Nuestros Servicios</h2>
-
-        <p class="subtitulo">
-            Soluciones informáticas para hogares, profesionales y empresas.
-        </p>
-
-        <div class="servicios-grid">
-
-            <div class="card-servicio">
-                <div class="icono">🖥️</div>
-                <h3>PC y Notebooks</h3>
-                <p>
-                    Diagnóstico, reparación, mantenimiento y actualización de equipos.
-                </p>
-            </div>
-
-            <div class="card-servicio">
-                <div class="icono">🖨️</div>
-                <h3>Impresoras</h3>
-                <p>
-                    Instalación, configuración y solución de problemas de impresión.
-                </p>
-            </div>
-
-            <div class="card-servicio">
-                <div class="icono">🌐</div>
-                <h3>Redes y WiFi</h3>
-                <p>
-                    Configuración de redes cableadas e inalámbricas para hogares y empresas.
-                </p>
-            </div>
-
-            <div class="card-servicio">
-                <div class="icono">☁️</div>
-                <h3>Soporte Remoto</h3>
-                <p>
-                    Asistencia rápida y segura sin necesidad de trasladar el equipo.
-                </p>
-            </div>
-
-            <div class="card-servicio">
-                <div class="icono">💾</div>
-                <h3>Recuperación de Datos</h3>
-                <p>
-                    Respaldo, migración y recuperación de información importante.
-                </p>
-            </div>
-
-            <div class="card-servicio">
-                <div class="icono">⚙️</div>
-                <h3>Software a Medida</h3>
-                <p>
-                    Desarrollo de aplicaciones adaptadas a las necesidades de cada negocio.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<div class="banner-scroll">
-
-    <div class="banner-track">
-
-        <span>+20 años de experiencia</span>
-        <span>•</span>
-
-        <span>Soporte remoto y presencial</span>
-        <span>•</span>
-
-        <span>Desarrollo de software a medida</span>
-        <span>•</span>
-
-        <span>Redes y conectividad</span>
-        <span>•</span>
-
-        <span>Reparación de PC y notebooks</span>
-        <span>•</span>
-
-        <span>Impresoras</span>
-        <span>•</span>
-
-        <span>Recuperación de datos</span>
-        <span>•</span>
-
-        <span>Atención personalizada</span>
-        <span>•</span>
-
-        <!-- Repetimos para efecto infinito -->
-
-        <span>+20 años de experiencia</span>
-        <span>•</span>
-
-        <span>Soporte remoto y presencial</span>
-        <span>•</span>
-
-        <span>Desarrollo de software a medida</span>
-        <span>•</span>
-
-        <span>Redes y conectividad</span>
-        <span>•</span>
-
-        <span>Reparación de PC y notebooks</span>
-        <span>•</span>
-
-        <span>Impresoras</span>
-        <span>•</span>
-
-        <span>Recuperación de datos</span>
-        <span>•</span>
-
-        <span>Atención personalizada</span>
-
-    </div>
-
-</div>
-
-        <section id="software">
-        </section>
-
-        <section id="sobre-mi" class="sobre-mi">
-
-    <div class="contenedor">
-
-        <h2>Sobre mí</h2>
-
-        <p class="subtitulo">
-            Tecnología, experiencia y soluciones reales para cada necesidad.
-        </p>
-
-        <div class="sobre-mi-contenido">
-
-            <div class="sobre-mi-texto">
-
-                <p>
-                    Soy <strong>Juan Pablo</strong>, fundador de TecnoGestión JotaPe.
-                </p>
-
-                <p>
-                    Desde hace más de 20 años acompaño a personas, profesionales y empresas
-                    brindando soluciones informáticas confiables, prácticas y adaptadas a cada necesidad.
-                </p>
-
-                <p>
-                    Mi experiencia abarca soporte técnico, reparación y mantenimiento de equipos,
-                    redes y conectividad, recuperación de datos y desarrollo de software a medida
-                    para optimizar procesos y mejorar la gestión de los negocios.
-                </p>
-
-                <p>
-                    Creo que la tecnología debe simplificar el trabajo y no convertirse en un problema.
-                    Por eso cada proyecto es atendido de manera personalizada, buscando siempre
-                    soluciones claras, eficientes y duraderas.
-                </p>
-
-                <p>
-                    Ya sea de forma remota o presencial, mi objetivo es que cada cliente tenga
-                    el respaldo tecnológico que necesita para enfocarse en lo realmente importante:
-                    su trabajo, su empresa o sus proyectos.
-                </p>
-
-            </div>
-
-<div class="sobre-mi-datos">
-
-    <div class="dato">
-        <span>20+</span>
-        <p>Años de experiencia</p>
-    </div>
-
-    <div class="dato">
-        <span>100%</span>
-        <p>Atención personalizada</p>
-    </div>
-
-    <div class="dato">
-        <span>Software</span>
-        <p>Desarrollo a medida</p>
-    </div>
-
-    <div class="dato">
-        <span>Redes</span>
-        <p>Conectividad profesional</p>
-    </div>
-
-    <div class="dato">
-        <span>Soporte</span>
-        <p>Asistencia integral IT</p>
-    </div>
-
-</div>
-
-        </div>
-
-    </div>
-
-</section>
-
-        <section id="contacto" class="contacto">
-
-    <div class="contenedor">
-
-        <h2>Contacto</h2>
-
-        <p class="subtitulo">
-            Escribinos y te respondemos lo antes posible.
-        </p>
-
-        <div class="contacto-grid">
-
-            <!-- WhatsApp -->
-            <div class="contacto-card">
-                <h3>WhatsApp</h3>
-                <p>Respuesta rápida directa</p>
-
-                <a href="https://wa.me/5493492664153?text=Hola%20TecnoGestión%20JotaPe,%20necesito%20información"
-                   target="_blank">
-                   Escribir ahora
+        <div class="hero-container">
+            <div class="tagline">Tecnología que simplifica tu trabajo</div>
+            <h2>Soluciones<br><span>tecnológicas</span><br>que impulsan<br>tu negocio</h2>
+            
+            <p class="hero-description">
+                Soporte IT, redes, desarrollo de <span>software a medida</span> y automatización de procesos para personas, profesionales y empresas.
+            </p>
+
+            <div class="cta-group">
+                <a href="#" class="btn-primary">
+                    <i class="far fa-calendar-alt"></i> Agendar reunión <i class="fas fa-chevron-right" style="font-size: 11px;"></i>
+                </a>
+                <a href="#" class="btn-secondary">
+                    Ver servicios <i class="fas fa-chevron-right" style="font-size: 11px;"></i>
                 </a>
             </div>
-
-            <!-- Email -->
-            <div class="contacto-card">
-                <h3>Email</h3>
-                <p>Consultas más detalladas</p>
-
-                <a href="mailto:tecnogestionjotape@gmail.com?subject=Consulta%20Web%20TecnoGestión%20JotaPe&body=Hola,%20quisiera%20hacer%20una%20consulta">
-                   Enviar mail
-                </a>
-            </div>
-
-            <!-- Agenda -->
-            <div class="contacto-card">
-                <h3>Agendar turno</h3>
-                <p>Reservá un horario conmigo directamente</p>
-
-                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0GheDChQ-KvepslWkY7w5EiXNtGLU957lTiqtzMfBZ4tQxPuvzPEIRSxZU7AQ4qORJe2WmrFwT?gv=true"
-   target="_blank">
-   Reservar ahora
-</a>
-            </div>
-
         </div>
-
-    </div>
-
-</section>
-
     </main>
 
-    <a href="#inicio" class="volver-arriba">
+    <footer class="features-bar">
+        <div class="feature-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Años de<br>experiencia</div>
+        </div>
 
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-         stroke-width="3.5" stroke-linecap="round"
-         stroke-linejoin="round">
+        <div class="feature-item">
+            <div class="feature-icon-wrapper">
+                <i class="far fa-user"></i>
+            </div>
+            <div class="feature-text">
+                <div class="stat-number" style="font-size: 20px;">100%</div>
+                <div class="stat-label">Atención personalizada</div>
+            </div>
+        </div>
 
-        <path d="M12 19V5"></path>
-        <path d="M5 12L12 5L19 12"></path>
+        <div class="feature-item">
+            <div class="feature-icon-wrapper">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="feature-text">
+                <span class="feature-title">Software</span>
+                <span class="feature-desc">Desarrollo a medida</span>
+            </div>
+        </div>
 
-    </svg>
+        <div class="feature-item">
+            <div class="feature-icon-wrapper">
+                <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="feature-text">
+                <span class="feature-title">Redes</span>
+                <span class="feature-desc">Conectividad profesional</span>
+            </div>
+        </div>
 
-</a>
+        <div class="feature-item">
+            <div class="feature-icon-wrapper">
+                <i class="fas fa-headphones-alt"></i>
+            </div>
+            <div class="feature-text">
+                <span class="feature-title">Soporte</span>
+                <span class="feature-desc">Asistencia integral IT</span>
+            </div>
+        </div>
+    </footer>
 
 </body>
-
 </html>
