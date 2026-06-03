@@ -455,3 +455,55 @@ h1 span {
         gap: 20px;
     }
 }
+
+/* --- BOTÓN VOLVER ARRIBA --- */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: rgba(6, 18, 36, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--blue-cyan); /* Borde inicial azul */
+    border-radius: 50%; /* Lo hace un círculo perfecto */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    z-index: 9999; /* Por encima de absolutamente todo */
+    cursor: pointer;
+    opacity: 0; /* Arranca oculto */
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.back-to-top:hover {
+    background: var(--orange); /* Cambia a naranja completo */
+    border-color: var(--orange);
+    color: white;
+    transform: translateY(-5px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 15px 30px rgba(255, 92, 0, 0.3);
+}
+
+/* Clase que activaremos con JavaScript cuando el usuario haga scroll */
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ajuste menor para celulares para que no tape botones importantes */
+@media (max-width: 600px) {
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
