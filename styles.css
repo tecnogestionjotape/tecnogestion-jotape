@@ -114,13 +114,14 @@ nav ul li a.active, nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* HERO SECTION TOTALMENTE TRANSPARENTE */
 .hero {
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 0 80px;
-    background: transparent; /* No tiene fondo propio, usa el del body */
+    background: transparent;
+    position: relative; /* Clave para que la barra se agarre de acá abajo */
 }
 
 .hero-content {
@@ -197,7 +198,7 @@ h1 span {
 
 /* SECCIÓN SERVICIOS TRANSPARENTE */
 .services-section {
-    padding: 100px 80px;
+    padding: 60px 80px 100px 80px;
     background: transparent;
 }
 
@@ -284,10 +285,10 @@ h1 span {
 
 /* 2. BARRA DE CARACTERÍSTICAS DINÁMICA (STICKY) */
 .features-bar {
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 25px; /* Se congela a 25px del borde inferior de la pantalla */
-    margin: 40px 80px;
+    position: absolute;
+    bottom: 30px; /* Clavada al fondo del hero */
+    left: 80px;
+    right: 80px;
     background: var(--glass);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
@@ -298,7 +299,7 @@ h1 span {
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
-    z-index: 999; /* Por encima de las tarjetas pero abajo del header */
+    z-index: 10;
 }
 
 .feature-item {
