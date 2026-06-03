@@ -21,7 +21,7 @@ html {
 /* 1. CONFIGURACIÓN DEL FONDO GLOBAL FIJO */
 body {
     background: linear-gradient(90deg, var(--bg-dark) 30%, rgba(3, 8, 18, 0.6) 60%, rgba(3, 8, 18, 0.3) 100%), 
-                url('img/fondohero.png'); 
+                url('img/fondohero.png');
     background-size: cover;
     background-position: center right;
     background-attachment: fixed; /* Mantiene la imagen inmóvil al scrollear */
