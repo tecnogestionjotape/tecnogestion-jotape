@@ -226,8 +226,9 @@ h1 span {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    /* Define 3 columnas simétricas en PC, y se adapta solo si falta espacio */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px; /* Un poco menos de espacio entre ellas para compactar */
 }
 
 /* Tarjeta estilo cristal */
@@ -236,8 +237,8 @@ h1 span {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid var(--border-color);
-    border-radius: 20px;
-    padding: 40px;
+    border-radius: 16px; /* Bordes un toque más finos */
+    padding: 30px; /* Al achicar el padding interno, la tarjeta se ve más estilizada */
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -369,4 +370,78 @@ h1 span {
     }
     .feature-item:not(:last-child) { border-right: none; }
     header, .hero, .services-section { padding-left: 30px; padding-right: 30px; }
+}
+
+
+/* --- DISEÑO RESPONSIVO GLOBAL (TABLETS Y CELULARES) --- */
+
+/* Ajustes para Tablets (Pantallas menores a 992px) */
+@media (max-width: 992px) {
+    header {
+        padding: 15px 30px;
+    }
+    nav ul {
+        gap: 15px; /* Menú más compacto */
+    }
+    .hero, .services-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    h1 {
+        font-size: 2.8rem; /* Achicamos el título principal */
+    }
+    .features-bar {
+        grid-template-columns: repeat(2, 1fr); /* La barra pasa a 2 columnas */
+        margin: 40px;
+        padding: 20px;
+    }
+    .feature-item:not(:last-child) {
+        border-right: none; /* Quitamos las líneas divisorias */
+    }
+}
+
+/* Ajustes para Celulares (Pantallas menores a 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 20px;
+    }
+    nav {
+        display: none; /* Por ahora ocultamos el menú de texto para que no se encime */
+    }
+    .hero {
+        padding: 0 20px;
+        align-items: center;
+        text-align: center; /* Centramos el texto en el celular */
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    .hero-btns {
+        flex-direction: column; /* Botones uno abajo del otro */
+        gap: 12px;
+        width: 100%;
+    }
+    .btn-orange, .btn-outline {
+        justify-content: center;
+        width: 100%;
+    }
+    .services-section {
+        padding: 60px 20px;
+    }
+    .services-header h2 {
+        font-size: 2rem;
+    }
+    .services-grid {
+        grid-template-columns: 1fr; /* En el celular va estricto 1 tarjeta por fila */
+        gap: 20px;
+    }
+    .features-bar {
+        position: relative; /* En celular pierde el absoluto para no romperse */
+        bottom: auto;
+        left: auto;
+        right: auto;
+        grid-template-columns: 1fr; /* Un item abajo del otro */
+        margin: 40px 20px 0 20px;
+        gap: 20px;
+    }
 }
