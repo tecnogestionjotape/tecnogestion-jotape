@@ -19,11 +19,17 @@
 
 body {
     background-color: var(--bg-dark);
+    /* Se restaura tu imagen de fondo original fija en toda la pantalla */
+    background-image: url('image_e69c3e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--text-white);
     overflow-x: hidden;
 }
 
-/* Contenedor general */
+/* Contenedor general transparente */
 .site-container {
     width: 100%;
     background: transparent;
@@ -191,7 +197,7 @@ nav ul li a:hover, nav ul li a.active {
     border-color: var(--text-gray);
 }
 
-/* --- FEATURES BAR (Fija abajo del Hero) --- */
+/* --- FEATURES BAR --- */
 .features-bar {
     position: absolute;
     bottom: 30px;
@@ -285,7 +291,7 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--blue-cyan);
 }
 
-/* Grilla Simétrica Estricta 3 Columnas */
+/* Grilla Simétrica Estricta de 3 Columnas */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
