@@ -224,11 +224,12 @@ h1 span {
     color: var(--blue-cyan);
 }
 
+/* CONFIGURACIÓN ESTRICTA DE 3 COLUMNAS */
 .services-grid {
     display: grid;
-    /* Define 3 columnas simétricas en PC, y se adapta solo si falta espacio */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px; /* Un poco menos de espacio entre ellas para compactar */
+    /* Fuerza a que sean siempre 3 columnas de igual tamaño en pantallas grandes */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
 }
 
 /* Tarjeta estilo cristal */
