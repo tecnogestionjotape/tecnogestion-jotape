@@ -391,6 +391,12 @@ h1 span {
     h1 {
         font-size: 2.8rem; /* Achicamos el título principal */
     }
+    
+    /* CAMBIO REQUERIDO: Pasa a 2 columnas (quedan 3 filas de 2) */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .features-bar {
         grid-template-columns: repeat(2, 1fr); /* La barra pasa a 2 columnas */
         margin: 40px;
@@ -432,10 +438,13 @@ h1 span {
     .services-header h2 {
         font-size: 2rem;
     }
+
+    /* CAMBIO REQUERIDO: Pasa a 1 columna (quedan 6 filas de 1) */
     .services-grid {
-        grid-template-columns: 1fr; /* En el celular va estricto 1 tarjeta por fila */
+        grid-template-columns: 1fr;
         gap: 20px;
     }
+
     .features-bar {
         position: relative; /* En celular pierde el absoluto para no romperse */
         bottom: auto;
