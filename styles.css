@@ -507,3 +507,240 @@ h1 span {
         font-size: 1rem;
     }
 }
+
+/* ================================================= */
+/* SOFTWARE & AUTOMATIZACIÓN */
+/* ================================================= */
+
+.sw-section {
+    padding: 80px;
+    background: transparent;
+}
+
+.sw-tagline {
+    color: var(--orange);
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.sw-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.sw-title span {
+    color: var(--blue-cyan);
+}
+
+.sw-desc {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.sw-desc a {
+    color: var(--blue-cyan);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sw-desc a:hover {
+    text-decoration: underline;
+}
+
+.uj-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.uj-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: 0.3s;
+    border: 1px solid;
+}
+
+.uj-link:hover {
+    transform: translateY(-2px);
+}
+
+.uj-link.web {
+    background: rgba(0,163,255,0.1);
+    color: var(--blue-cyan);
+    border-color: rgba(0,163,255,0.3);
+}
+
+.uj-link.ig {
+    background: rgba(255,92,0,0.1);
+    color: var(--orange);
+    border-color: rgba(255,92,0,0.3);
+}
+
+/* ================================================= */
+/* GRID DE APLICACIONES */
+/* ================================================= */
+
+.sw-apps-title {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    margin-bottom: 20px;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.app-card {
+    background: rgba(6, 18, 36, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0,163,255,0.3);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.app-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.app-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.app-icon.orange {
+    background: rgba(255,92,0,0.1);
+    color: var(--orange);
+    border: 1px solid rgba(255,92,0,0.25);
+}
+
+.app-icon.blue {
+    background: rgba(0,163,255,0.1);
+    color: var(--blue-cyan);
+    border: 1px solid rgba(0,163,255,0.25);
+}
+
+.app-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.app-badge {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.badge-orange {
+    background: rgba(255,92,0,0.15);
+    color: var(--orange);
+}
+
+.badge-blue {
+    background: rgba(0,163,255,0.15);
+    color: white;
+}
+
+.app-desc {
+    color: var(--text-gray);
+    line-height: 1.7;
+    font-size: 0.92rem;
+    margin-bottom: 18px;
+}
+
+.app-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.app-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 700;
+    transition: 0.3s;
+    border: 1px solid;
+}
+
+.app-btn:hover {
+    transform: translateY(-2px);
+}
+
+.app-btn.orange {
+    background: rgba(255,92,0,0.1);
+    color: var(--orange);
+    border-color: rgba(255,92,0,0.3);
+}
+
+.app-btn.blue {
+    background: rgba(0,163,255,0.1);
+    color: var(--blue-cyan);
+    border-color: rgba(0,163,255,0.3);
+}
+
+/* ================================================= */
+/* LAYOUT SOFTWARE 2 COLUMNAS */
+/* ================================================= */
+
+.software-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.software-left {
+    position: sticky;
+    top: 120px;
+}
+
+.software-right {
+    width: 100%;
+}
+
