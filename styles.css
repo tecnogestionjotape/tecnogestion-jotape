@@ -600,7 +600,8 @@ h1 span {
     font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: var(--text-gray);
+    color: white;
+    /*color: var(--text-gray);*/
     margin-bottom: 20px;
 }
 
