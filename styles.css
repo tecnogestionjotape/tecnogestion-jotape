@@ -1471,3 +1471,51 @@ nav {
 #software {
     scroll-margin-top: 70px;
 }
+
+/* ================================================= */
+/* AJUSTE FINAL RESPONSIVE MOBILE */
+/* ================================================= */
+
+@media (max-width: 600px) {
+
+    .sw-section,
+    .about-section,
+    .contact-section,
+    .ot-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .software-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .software-left {
+        position: static;
+    }
+
+    .apps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .about-content {
+        padding: 28px 22px;
+    }
+
+    .about-content h2,
+    .sw-title,
+    .ot-card h2 {
+        font-size: 2rem;
+    }
+
+    .ot-card {
+        padding: 32px 22px;
+    }
+}
