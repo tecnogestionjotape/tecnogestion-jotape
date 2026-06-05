@@ -751,6 +751,7 @@ h1 span {
 
 .ot-section {
     padding: 40px 80px 80px;
+    scroll-margin-top: 180px;
 }
 
 .ot-card {
@@ -810,4 +811,136 @@ h1 span {
     color: var(--text-gray);
     margin-bottom: 30px;
     font-size: 0.95rem;
+}
+
+/* ================================================= */
+/* CINTA TECNOLOGÍAS */
+/* ================================================= */
+
+.tech-marquee {
+    overflow: hidden;
+    position: relative;
+    padding: 18px 0;
+    margin: 20px 0 40px 0;
+
+    background: rgba(6, 18, 36, 0.45);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.tech-track {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    width: max-content;
+
+    animation: scrollTech 35s linear infinite;
+}
+
+.tech-track span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    color: white;
+
+    white-space: nowrap;
+}
+
+.tech-track .fa-circle {
+    font-size: 0.35rem;
+    color: var(--orange);
+}
+
+.tech-track .fa-linux,
+.tech-track .fa-arduino,
+.tech-track .fa-github {
+    color: var(--blue-cyan);
+    font-size: 1.2rem;
+}
+
+@keyframes scrollTech {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* ================================================= */
+/* CINTA SERVICIOS */
+/* ================================================= */
+
+.services-marquee {
+    overflow: hidden;
+    position: relative;
+    padding: 18px 0;
+    margin: 40px 0;
+
+    background: rgba(6, 18, 36, 0.45);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.services-track {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    width: max-content;
+
+    animation: scrollServices 40s linear infinite;
+}
+
+.services-track span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    color: white;
+    white-space: nowrap;
+}
+
+.services-track .fa-circle {
+    font-size: 0.35rem;
+    color: var(--blue-cyan);
+}
+
+.services-track .fa-computer,
+.services-track .fa-print,
+.services-track .fa-graduation-cap,
+.services-track .fa-lightbulb,
+.services-track .fa-network-wired,
+.services-track .fa-gears,
+.services-track .fa-code,
+.services-track .fa-database,
+.services-track .fa-headset {
+    color: var(--orange);
+}
+
+@keyframes scrollServices {
+
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
 }
