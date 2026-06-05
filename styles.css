@@ -57,6 +57,16 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    cursor: pointer;
+}
+
+.logo:hover {
+    opacity: 0.9;
 }
 
 .logo-icon {
@@ -1104,4 +1114,346 @@ h1 span {
     height: 6px;
     background: var(--blue-cyan);
     border-radius: 50%;
+}
+
+/* ================================================= */
+/* CONTACTO */
+/* ================================================= */
+
+.contact-section {
+    padding: 100px 80px;
+}
+
+.contact-header {
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
+.contact-tagline {
+    color: var(--orange);
+
+    font-size: 1.1rem;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.contact-header h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.contact-description {
+
+    color: white;
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+
+    width: 100%;
+
+    max-width: 100%;
+
+    margin-top: 25px;
+
+    padding: 25px 35px;
+
+    background: rgba(6, 18, 36, 0.28);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.contact-card {
+    background: rgba(6, 18, 36, 0.5);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    padding: 35px 25px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(0,163,255,0.35);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: var(--orange);
+    margin-bottom: 18px;
+}
+
+.contact-card h3 {
+    color: white;
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Tablets */
+
+@media (max-width: 992px) {
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Celulares */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ================================================= */
+/* FOOTER */
+/* ================================================= */
+
+.footer {
+
+    margin-top: 10px;
+
+    background: rgba(6, 18, 36, 0.45);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-top: 1px solid rgba(255,255,255,0.06);
+
+}
+
+.footer-content {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 50px 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+.footer-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.footer-logo {
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #0055ff,
+        var(--blue-cyan)
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 1.3rem;
+}
+
+.footer-brand h3 {
+
+    color: white;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 6px;
+}
+
+.footer-brand p {
+
+    color: var(--text-gray);
+
+    font-size: 0.95rem;
+}
+
+.footer-links {
+
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+
+    text-decoration: none;
+
+    color: var(--text-gray);
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+
+    color: var(--orange);
+}
+
+.footer-social {
+
+    display: flex;
+
+    gap: 15px;
+}
+
+.footer-social a {
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+
+    background: var(--orange);
+
+    border-color: var(--orange);
+
+    transform: translateY(-4px);
+}
+
+.footer-bottom {
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.05);
+
+    color: var(--text-gray);
+
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+
+    .footer-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 40px 20px;
+    }
+
+    .footer-brand {
+
+        flex-direction: column;
+    }
+
+    .footer-links {
+
+        justify-content: center;
+    }
+
+}
+
+/* Ajuste de posición al navegar desde el menú */
+
+#sobre-mi,
+{
+    scroll-margin-top: 60px;
+}
+
+#servicios {
+    scroll-margin-top: 50px;
+}
+
+#software {
+    scroll-margin-top: 70px;
 }
