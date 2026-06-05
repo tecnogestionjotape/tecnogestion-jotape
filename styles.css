@@ -431,11 +431,25 @@ h1 span {
 /* Ajustes para Celulares (Pantallas menores a 600px) */
 @media (max-width: 600px) {
     header {
-        padding: 15px 20px;
-    }
-    nav {
-        display: none; /* Por ahora ocultamos el menú de texto para que no se encime */
-    }
+    padding: 14px 18px;
+}
+
+.logo-text {
+    font-size: 1rem;
+}
+
+.logo-icon {
+    padding: 7px;
+}
+
+nav {
+    display: none;
+}
+
+.btn-whatsapp {
+    padding: 9px 14px;
+    font-size: 0.85rem;
+}
     .hero {
         padding: 0 20px;
         align-items: center;
