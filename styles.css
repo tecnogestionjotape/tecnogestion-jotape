@@ -1535,3 +1535,28 @@ footer,
     max-width: 100%;
     overflow-x: hidden;
 }
+
+/* Ajuste Hero + cinta en mobile/tablet */
+@media (max-width: 992px) {
+
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+    .features-bar {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin: 40px 0 0 0;
+        width: 100%;
+    }
+
+    .tech-marquee {
+        margin-top: 20px;
+        z-index: 1;
+    }
+}
