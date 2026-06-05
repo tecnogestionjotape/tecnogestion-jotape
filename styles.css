@@ -165,6 +165,17 @@ h1 span {
     gap: 20px;
 }
 
+.hero-btns a {
+    width: 240px;
+    min-height: 74px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: left;
+}
+
 .btn-orange, .btn-outline {
     padding: 15px 30px;
     border-radius: 12px;
@@ -943,4 +954,154 @@ h1 span {
         transform: translateX(0);
     }
 
+}
+
+.ot-card .btn-orange {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 16px 40px;
+}
+
+.about-image img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* ================================================= */
+/* SOBRE MI */
+/* ================================================= */
+
+.about-section {
+    padding: 100px 80px;
+
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,0.45),
+        0 0 30px rgba(0,163,255,0.08);
+
+    transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+    transform: translateY(-6px);
+}
+
+.about-content {
+    background: rgba(6, 18, 36, 0.45);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 40px;
+}
+
+.about-tagline {
+    color: var(--orange);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.about-content h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.about-text {
+    color: var(--text-gray);
+
+    line-height: 1.9;
+
+    font-size: 1rem;
+
+    margin-bottom: 20px;
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.about-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.about-badges span {
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 999px;
+
+    padding: 10px 16px;
+
+    color: white;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.about-badges span:hover {
+
+    transform: translateY(-3px);
+
+    border-color: rgba(0,163,255,0.35);
+
+    box-shadow: 0 10px 25px rgba(0,163,255,0.12);
+}
+
+.badge-separator {
+    width: 6px;
+    height: 6px;
+    background: var(--blue-cyan);
+    border-radius: 50%;
 }
