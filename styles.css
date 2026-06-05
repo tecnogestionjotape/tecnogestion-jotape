@@ -1560,3 +1560,33 @@ footer,
         z-index: 1;
     }
 }
+
+/* ================================================= */
+/* MENÚ HAMBURGUESA */
+/* ================================================= */
+
+.menu-toggle {
+    display: none;
+    background: rgba(6, 18, 36, 0.6);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-whatsapp {
+        display: none;
+    }
+
+}
