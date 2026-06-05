@@ -1519,3 +1519,19 @@ nav {
         padding: 32px 22px;
     }
 }
+
+/* Evita scroll horizontal en mobile/tablet */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.site-container,
+header,
+footer,
+.tech-marquee,
+.services-marquee {
+    max-width: 100%;
+    overflow-x: hidden;
+}
