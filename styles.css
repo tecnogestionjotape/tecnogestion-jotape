@@ -745,3 +745,69 @@ h1 span {
     width: 100%;
 }
 
+/* ================================================= */
+/* CONSULTA DE REPARACIONES */
+/* ================================================= */
+
+.ot-section {
+    padding: 40px 80px 80px;
+}
+
+.ot-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(6, 18, 36, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 50px;
+    text-align: center;
+}
+
+.ot-tagline {
+    color: var(--orange);
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.ot-card h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.ot-description {
+    color: var(--text-gray);
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+.ot-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.ot-benefit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+.ot-benefit i {
+    color: var(--blue-cyan);
+}
+
+.ot-note {
+    color: var(--text-gray);
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
