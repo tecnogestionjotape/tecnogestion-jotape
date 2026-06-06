@@ -1790,3 +1790,25 @@ footer,
     }
 
 }
+/* Sobre Mí en una columna para tablets */
+
+@media (max-width: 992px) {
+
+    .about-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        order: 1;
+    }
+
+    .about-content {
+        order: 2;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+}
