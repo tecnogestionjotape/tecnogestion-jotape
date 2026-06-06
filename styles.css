@@ -1691,3 +1691,16 @@ footer,
         border-color: rgba(255,92,0,0.18);
     }
 }
+/* Corrección menú móvil visible */
+
+@media (max-width: 600px) {
+
+    header {
+        overflow: visible;
+    }
+
+    .mobile-menu {
+        z-index: 2000;
+    }
+
+}
