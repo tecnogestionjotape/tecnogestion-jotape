@@ -1429,10 +1429,26 @@ nav {
     padding: 25px;
 
     border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-slogan {
+
+    color: white;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.footer-copy {
 
     color: var(--text-gray);
 
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+
+    margin: 0;
 }
 
 @media (max-width: 900px) {
