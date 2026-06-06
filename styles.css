@@ -1772,3 +1772,21 @@ footer,
         border: 1px solid rgba(255,255,255,0.04);
     }
 }
+/* Software en una columna para tablets */
+
+@media (max-width: 992px) {
+
+    .software-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .software-left {
+        position: static;
+    }
+
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
