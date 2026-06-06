@@ -1704,3 +1704,71 @@ footer,
     }
 
 }
+/* Menú hamburguesa también en tablets */
+
+@media (max-width: 992px) {
+
+    nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-whatsapp {
+        display: none;
+    }
+
+    header {
+        overflow: visible;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 70px;
+        left: 24px;
+        right: 24px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        padding: 18px;
+
+        background: rgba(6, 18, 36, 0.92);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 18px;
+
+        box-shadow: 0 20px 45px rgba(0,0,0,0.55);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+
+        transition: all 0.3s ease;
+
+        z-index: 2000;
+    }
+
+    .mobile-menu.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 13px 14px;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.04);
+    }
+}
