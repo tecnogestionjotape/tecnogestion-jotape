@@ -23,3 +23,30 @@ window.addEventListener('scroll', function() {
         backToTopBtn.classList.remove('show');
     }
 });
+
+/* ===================================== */
+/* MENÚ HAMBURGUESA */
+/* ===================================== */
+
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuToggle && mobileMenu) {
+
+    menuToggle.addEventListener('click', () => {
+
+        mobileMenu.classList.toggle('open');
+
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+
+        link.addEventListener('click', () => {
+
+            mobileMenu.classList.remove('open');
+
+        });
+
+    });
+
+}
