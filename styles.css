@@ -1611,3 +1611,23 @@ footer,
     }
 
 }
+
+/* Hamburguesa a la izquierda en celular */
+
+@media (max-width: 600px) {
+
+    header {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .menu-toggle {
+        order: -1;
+        flex-shrink: 0;
+    }
+
+    .logo {
+        flex-shrink: 1;
+    }
+
+}
