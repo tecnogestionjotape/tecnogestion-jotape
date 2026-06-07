@@ -1895,3 +1895,13 @@ footer,
     }
 
 }
+
+/* Botones Hero más opacos en tablets */
+
+@media (min-width: 601px) and (max-width: 992px) {
+
+    .btn-outline {
+        background: rgba(6, 18, 36, 0.75);
+    }
+
+}
