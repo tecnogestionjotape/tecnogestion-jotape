@@ -89,6 +89,10 @@ header {
     color: var(--blue-cyan);
 }
 
+.logo-text .logo-tecno {
+    color: var(--orange);
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -1860,8 +1864,4 @@ footer,
         justify-content: center;
         text-align: center;
     }
-}
-
-.logo-tecno {
-    color: #ff5c00;
 }
