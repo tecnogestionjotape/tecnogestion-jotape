@@ -578,7 +578,7 @@ nav {
 }
 
 .sw-desc {
-    color: var(--text-gray);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 1rem;
     line-height: 1.8;
     max-width: 800px;
@@ -621,13 +621,13 @@ nav {
 
 .uj-link.web {
     background: rgba(0,163,255,0.1);
-    color: var(--blue-cyan);
+    color: white;
     border-color: rgba(0,163,255,0.3);
 }
 
 .uj-link.ig {
     background: rgba(255,92,0,0.1);
-    color: var(--orange);
+    color: white;
     border-color: rgba(255,92,0,0.3);
 }
 
