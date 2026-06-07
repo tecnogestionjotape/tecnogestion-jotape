@@ -192,8 +192,8 @@ h1 span {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    text-align: left;
+    gap: 14px;
+    text-align: center;
 }
 
 .btn-orange, .btn-outline {
