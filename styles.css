@@ -1353,6 +1353,13 @@ nav {
 
     margin-bottom: 6px;
 }
+.footer-brand .logo-tecno {
+    color: var(--orange);
+}
+
+.footer-brand .footer-jotape {
+    color: var(--blue-cyan);
+}
 
 .footer-brand p {
 
