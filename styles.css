@@ -1236,6 +1236,11 @@ nav {
     margin-bottom: 18px;
 }
 
+.contact-card .fa-whatsapp,
+.contact-card .fa-envelope {
+    color: var(--blue-cyan);
+}
+
 .contact-card h3 {
     color: white;
     font-size: 1.15rem;
