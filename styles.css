@@ -71,7 +71,12 @@ header {
 }
 
 .logo-icon {
-    background: linear-gradient(135deg, #0055ff, var(--blue-cyan));
+    background: linear-gradient(
+        135deg,
+        #ff5c00 0%,
+        #0055ff 45%,
+        #00a3ff 100%
+    );
     padding: 8px;
     border-radius: 8px;
     display: flex;
@@ -1334,10 +1339,11 @@ nav {
     border-radius: 14px;
 
     background: linear-gradient(
-        135deg,
-        #0055ff,
-        var(--blue-cyan)
-    );
+    135deg,
+    #ff5c00 0%,
+    #0055ff 45%,
+    #00a3ff 100%
+);
 
     display: flex;
 
