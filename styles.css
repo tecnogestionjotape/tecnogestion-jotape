@@ -1883,3 +1883,15 @@ footer,
         text-align: center;
     }
 }
+/* Ajuste botones Hero en celular */
+
+@media (max-width: 600px) {
+
+    .hero-btns a {
+        justify-content: space-between;
+        text-align: left;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+}
