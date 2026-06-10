@@ -491,9 +491,17 @@ function renderGrupos(){
       const scrollActual = window.scrollY;
 
 guardar();
-render();
 
-window.scrollTo(0, scrollActual);
+requestAnimationFrame(() => {
+  render();
+
+  requestAnimationFrame(() => {
+    window.scrollTo({
+      top: scrollActual,
+      behavior: "instant"
+    });
+  });
+});
     });
   });
 }
@@ -671,9 +679,17 @@ const gruposTerminados = faseGruposCompleta();
       const scrollActual = window.scrollY;
 
 guardar();
-render();
 
-window.scrollTo(0, scrollActual);
+requestAnimationFrame(() => {
+  render();
+
+  requestAnimationFrame(() => {
+    window.scrollTo({
+      top: scrollActual,
+      behavior: "instant"
+    });
+  });
+});
     });
   });
 }
