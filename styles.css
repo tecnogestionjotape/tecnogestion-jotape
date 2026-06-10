@@ -180,9 +180,11 @@ h1 span {
     color: var(--orange);
 }
 
-.hero-btns {
-    display: flex;
-    gap: 20px;
+.hero-btns{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    align-items:center;
 }
 
 .hero-btns a {
@@ -1907,28 +1909,30 @@ footer,
 }
 
 .btn-fixture{
-    display:inline-flex;
+    width:100%;
+    max-width:560px;
+
+    display:flex;
     align-items:center;
     justify-content:center;
 
-    width:240px;
-    height:58px;
+    padding:16px 24px;
 
-    background:#ff6f00;
-    color:#fff;
+    background:#ff5c00;
+    color:white;
 
     text-decoration:none;
-    font-weight:700;
+    font-weight:800;
     font-size:1rem;
 
-    border-radius:999px;
+    border-radius:16px;
 
-    box-shadow:0 8px 20px rgba(255,111,0,.25);
+    box-shadow:0 12px 30px rgba(255,92,0,.35);
 
     transition:.3s;
 }
 
 .btn-fixture:hover{
     transform:translateY(-3px);
-    background:#e65f00;
+    background:#ff6f00;
 }
