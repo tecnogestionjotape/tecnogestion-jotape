@@ -719,9 +719,3 @@ document.getElementById("cerrar-bienvenida")
 
 });
 
-document.getElementById("btn-imprimir")
-.addEventListener("click",()=>{
-
-  window.print();
-
-});

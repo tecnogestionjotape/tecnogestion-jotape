@@ -184,18 +184,19 @@ h1 span {
     display:flex;
     flex-wrap:wrap;
     gap:20px;
-    align-items:center;
+    max-width:1000px;
 }
 
-.hero-btns a {
-    width: 240px;
-    min-height: 74px;
+.hero-btns a{
+    width:220px;
+    min-height:74px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:14px;
+    text-align:center;
 }
 
 .btn-orange, .btn-outline {
@@ -1909,15 +1910,6 @@ footer,
 }
 
 .btn-fixture{
-    width:100%;
-    max-width:560px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    padding:16px 24px;
-
     background:#ff5c00;
     color:white;
 
@@ -1937,81 +1929,3 @@ footer,
     background:#ff6f00;
 }
 
-@media print{
-
-  @page{
-    size:A4;
-    margin:12mm;
-  }
-
-  header,
-  .fixture-nav,
-  .panel-control,
-  footer,
-  .modal-overlay,
-  .links{
-    display:none !important;
-  }
-
-  body{
-    background:white;
-    color:#000;
-  }
-
-  .titulo-seccion{
-    page-break-after:avoid;
-    break-after:avoid;
-    margin:20px 0 12px;
-  }
-
-  .titulo-seccion h2{
-    page-break-after:avoid;
-    break-after:avoid;
-  }
-
-  .grupo,
-  .terceros-card,
-  .ronda{
-    box-shadow:none;
-    border:1px solid #ccc;
-    page-break-inside:avoid;
-    break-inside:avoid;
-    margin-bottom:18px;
-  }
-
-  .grupos-container,
-  .terceros-container,
-  .knockout-container{
-    padding:0;
-  }
-
-  .grupo-contenido{
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-  }
-
-  table{
-    font-size:.72rem;
-  }
-
-  th,
-  td{
-    padding:5px;
-  }
-
-  input{
-    border:none;
-    font-weight:bold;
-    width:35px;
-  }
-
-  .partido{
-    padding:7px;
-    margin-bottom:6px;
-  }
-
-  .partido-info{
-    font-size:.7rem;
-  }
-
-}
