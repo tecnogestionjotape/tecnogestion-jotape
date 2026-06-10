@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fixture Mundial 2026 Gratis | TecnoGestión JotaPe</title>
+
+  <meta name="description"
+    content="Fixture Mundial 2026 interactivo y gratuito desarrollado por TecnoGestión JotaPe">
+
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <header id="inicio">
+    <div class="hero">
+      <div class="hero-text">
+        <span class="marca-mini">TecnoGestión JotaPe presenta</span>
+
+        <h1>⚽ Fixture Mundial 2026</h1>
+
+        <p>
+          Completá resultados, calculá posiciones y seguí el camino al campeón.
+        </p>
+
+        <div class="links">
+          <a href="https://tecnogestionjotape.com.ar" target="_blank">
+            <i class="fa-solid fa-globe"></i>
+            Web
+          </a>
+
+          <a href="https://www.instagram.com/tecnogestionjotape/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+          </a>
+
+          <a href="https://wa.me/5493492664153" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="logo-box">
+        <img src="logo.png" alt="TecnoGestión JotaPe">
+      </div>
+    </div>
+  </header>
+
+  <nav class="fixture-nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#grupos">Grupos</a>
+    <a href="#terceros">Mejores terceros</a>
+    <a href="#ronda-32">Ronda de 32</a>
+    <a href="#octavos">Octavos</a>
+    <a href="#cuartos">Cuartos</a>
+    <a href="#semifinales">Semis</a>
+    <a href="#final">Final</a>
+  </nav>
+
+  <main>
+
+    <section class="panel-control">
+      <button id="btn-borrar">
+        Borrar mis resultados
+      </button>
+
+      <button id="btn-imprimir">
+  Descargar / Imprimir fixture
+</button>
+
+      <p>
+        Los resultados se guardan en este navegador. No se borran al cerrar, salvo que borres los datos del sitio o uses modo incógnito.
+      </p>
+    </section>
+
+    <section id="grupos" class="titulo-seccion">
+      <h2>🏆 Fase de Grupos</h2>
+    </section>
+
+    <section id="grupos-container" class="grupos-container"></section>
+
+    <section id="terceros" class="titulo-seccion">
+      <h2>🥉 Mejores terceros</h2>
+    </section>
+
+    <section id="terceros-container" class="terceros-container"></section>
+
+    <section id="eliminatorias" class="titulo-seccion">
+      <h2>⚔️ Eliminatorias</h2>
+    </section>
+
+    <section id="knockout-container" class="knockout-container"></section>
+
+  </main>
+
+  <footer>
+    <p>
+      Fixture Mundial 2026 desarrollado por
+      <strong>TecnoGestión JotaPe</strong>
+    </p>
+
+    <p>
+      www.tecnogestionjotape.com.ar
+    </p>
+  </footer>
+<div id="modal-reset" class="modal-overlay">
+
+  <div class="modal-box">
+
+    <h3>⚠️ Reiniciar Simulación</h3>
+
+    <p>
+      ¿Estás seguro?
+    </p>
+
+    <p>
+      Se borrarán todos los resultados ingresados, las tablas de posiciones y las eliminatorias generadas.
+    </p>
+
+    <p>
+      Los datos se eliminarán únicamente de este navegador.
+    </p>
+
+    <div class="modal-buttons">
+
+      <button id="cancelar-reset" class="btn-secundario">
+        Cancelar
+      </button>
+
+      <button id="confirmar-reset" class="btn-peligro">
+        Sí, reiniciar
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+ 
+
+<div id="modal-bienvenida" class="modal-overlay activo">
+
+  <div class="modal-box">
+
+    <h3>⚽ Fixture Mundial 2026</h3>
+
+    <p>
+      Completá los resultados de cada partido y el sistema calculará automáticamente las tablas, mejores terceros y eliminatorias.
+    </p>
+
+    <p>
+      Tus datos quedan guardados en este navegador. No se borran al cerrar la página.
+    </p>
+
+    <p>
+      También podés imprimirlo o guardarlo como PDF.
+    </p>
+
+    <div class="modal-buttons">
+      <button id="cerrar-bienvenida" class="btn-peligro">
+        Empezar
+      </button>
+    </div>
+
+  </div>
+
+</div>
+ <script src="fixture.js"></script>
+</body>
+</html>
