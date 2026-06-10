@@ -1905,3 +1905,30 @@ footer,
     }
 
 }
+
+.btn-fixture{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:240px;
+    height:58px;
+
+    background:#ff6f00;
+    color:#fff;
+
+    text-decoration:none;
+    font-weight:700;
+    font-size:1rem;
+
+    border-radius:999px;
+
+    box-shadow:0 8px 20px rgba(255,111,0,.25);
+
+    transition:.3s;
+}
+
+.btn-fixture:hover{
+    transform:translateY(-3px);
+    background:#e65f00;
+}
