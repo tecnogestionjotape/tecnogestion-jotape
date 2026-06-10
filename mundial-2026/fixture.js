@@ -488,8 +488,12 @@ function renderGrupos(){
         }
       }
 
-      guardar();
-      render();
+      const scrollActual = window.scrollY;
+
+guardar();
+render();
+
+window.scrollTo(0, scrollActual);
     });
   });
 }
@@ -664,8 +668,12 @@ const gruposTerminados = faseGruposCompleta();
         }
       }
 
-      guardar();
-      render();
+      const scrollActual = window.scrollY;
+
+guardar();
+render();
+
+window.scrollTo(0, scrollActual);
     });
   });
 }
