@@ -1958,3 +1958,12 @@ footer,
     border-color: var(--orange);
     color: var(--orange);
 }
+
+.mobile-language-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+    margin-top: 8px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
