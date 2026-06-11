@@ -108,7 +108,13 @@ swTitle: 'Desarrollamos el software<br><span>que tu negocio necesita</span>',
 
 swDesc: 'Junto a <a href="https://ujautomatizaciones.com.ar" target="_blank">UJ Automatizaciones</a>, diseñamos y desarrollamos soluciones de software completamente a medida. Eliminamos las tareas repetitivas, automatizamos procesos y liberamos a tu equipo para que pueda enfocarse en lo que realmente importa: hacer crecer tu negocio.',
 
-swAppsTitle: "Algunos de nuestros desarrollos"    
+swAppsTitle: "Algunos de nuestros desarrollos",
+
+appName1: "Sistema de Órdenes de Trabajo",
+appBadge1: "Talleres de reparación",
+appDesc1: "Gestión completa de órdenes de trabajo para talleres. Panel de administración para el equipo técnico y portal de consulta de estado para el cliente en tiempo real.",
+appBtn1a: "Panel Taller",
+appBtn1b: "Portal Cliente"    
 },
 
     en: {
@@ -158,7 +164,13 @@ serviceDesc6: "Emergency procedures for recovering valuable information from har
 swTagline: "SOFTWARE & AUTOMATION",
 swTitle: 'We develop the software<br><span>your business needs</span>',
 swDesc: 'Together with <a href="https://ujautomatizaciones.com.ar" target="_blank">UJ Automatizaciones</a>, we design and develop fully customized software solutions. We eliminate repetitive tasks, automate processes and free your team to focus on what really matters: growing your business.',
-swAppsTitle: "Some of our developments"
+swAppsTitle: "Some of our developments",
+
+appName1: "Work Order Management System",
+appBadge1: "Repair workshops",
+appDesc1: "Complete work order management for repair workshops. Administration panel for technicians and real-time customer status portal.",
+appBtn1a: "Workshop Panel",
+appBtn1b: "Customer Portal"
     },
 
     pt: {
@@ -208,7 +220,13 @@ serviceDesc6: "Procedimentos de emergência para recuperar informações valiosa
 swTagline: "SOFTWARE & AUTOMAÇÃO",
 swTitle: 'Desenvolvemos o software<br><span>que sua empresa precisa</span>',
 swDesc: 'Junto com <a href="https://ujautomatizaciones.com.ar" target="_blank">UJ Automatizaciones</a>, projetamos e desenvolvemos soluções de software totalmente personalizadas. Eliminamos tarefas repetitivas, automatizamos processos e liberamos sua equipe para focar no que realmente importa: fazer seu negócio crescer.',
-swAppsTitle: "Alguns dos nossos desenvolvimentos"
+swAppsTitle: "Alguns dos nossos desenvolvimentos",
+
+appName1: "Sistema de Ordens de Serviço",
+appBadge1: "Oficinas de reparo",
+appDesc1: "Gestão completa de ordens de serviço para oficinas. Painel administrativo para técnicos e portal de acompanhamento em tempo real para clientes.",
+appBtn1a: "Painel da Oficina",
+appBtn1b: "Portal do Cliente"
     }
 
 };
@@ -273,6 +291,12 @@ document.getElementById('sw-tagline').textContent = translations[lang].swTagline
 document.getElementById('sw-title').innerHTML = translations[lang].swTitle;
 document.getElementById('sw-desc').innerHTML = translations[lang].swDesc;
 document.getElementById('sw-apps-title').textContent = translations[lang].swAppsTitle;
+
+document.getElementById('app-name-1').textContent = translations[lang].appName1;
+document.getElementById('app-badge-1').textContent = translations[lang].appBadge1;
+document.getElementById('app-desc-1').textContent = translations[lang].appDesc1;
+document.getElementById('app-btn-1a').textContent = translations[lang].appBtn1a;
+document.getElementById('app-btn-1b').textContent = translations[lang].appBtn1b;
 
     localStorage.setItem('language', lang);
 }
