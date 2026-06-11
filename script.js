@@ -80,7 +80,28 @@ otBenefit1: "Seguimiento online",
 otBenefit2: "Actualizaciones en tiempo real",
 otBenefit3: "Disponible las 24 horas",
 otNote: "Para ingresar deberás utilizar el DNI o CUIT informado al momento de registrar la reparación.",
-otButton: "Consultar estado de mi equipo"
+otButton: "Consultar estado de mi equipo",
+
+servicesTagline: "LO QUE HACEMOS",
+servicesTitle: 'Soluciones a la medida de tus <span>necesidades</span>',
+
+serviceTitle1: "Soporte Técnico & IT",
+serviceDesc1: "Asistencia integral presencial y remota para particulares, empresas y profesionales. Mantenimiento preventivo, optimización de sistemas y resolución rápida de fallas críticas.",
+
+serviceTitle2: "Desarrollo a Medida",
+serviceDesc2: "Diseño y programación de software adaptado 100% a tus procesos. Automatización de tareas, gestión de datos en planillas inteligentes y optimización de flujos de trabajo.",
+
+serviceTitle3: "Redes y Conectividad",
+serviceDesc3: "Instalación, configuración y mantenimiento de redes comerciales y del hogar. Soluciones de conectividad estables, seguras y optimizadas para un alto rendimiento.",
+
+serviceTitle4: "Recuperación de Equipos",
+serviceDesc4: "No descartes tus equipos antiguos o lentos. Les damos una segunda vida instalando y configurando sistemas operativos Linux livianos, logrando fluidez, estabilidad y seguridad total.",
+
+serviceTitle5: "Automatización y Control",
+serviceDesc5: "Optimización de procesos mediante lógica programada y sistemas de control inteligentes. Soluciones concretas para mejorar la eficiencia y el rendimiento de tus equipos.",
+
+serviceTitle6: "Recuperación de Datos",
+serviceDesc6: "Protocolos de emergencia para el salvamento y extracción de información valiosa desde discos rígidos, SSD's o memorias dañadas. Tu tranquilidad es prioridad."
     },
 
     en: {
@@ -105,7 +126,28 @@ otBenefit1: "Online tracking",
 otBenefit2: "Real-time updates",
 otBenefit3: "Available 24 hours a day",
 otNote: "To access, you must use the ID provided when the repair was registered.",
-otButton: "Check my equipment status"
+otButton: "Check my equipment status",
+
+servicesTagline: "WHAT WE DO",
+servicesTitle: 'Solutions tailored to your <span>needs</span>',
+
+serviceTitle1: "Technical Support & IT",
+serviceDesc1: "Comprehensive on-site and remote assistance for individuals, businesses and professionals. Preventive maintenance, system optimization and rapid resolution of critical failures.",
+
+serviceTitle2: "Custom Development",
+serviceDesc2: "Design and development of software fully adapted to your processes. Task automation, intelligent data management and workflow optimization.",
+
+serviceTitle3: "Networks & Connectivity",
+serviceDesc3: "Installation, configuration and maintenance of home and business networks. Stable, secure and optimized connectivity solutions for maximum performance.",
+
+serviceTitle4: "Equipment Recovery",
+serviceDesc4: "Don't discard old or slow equipment. We give it a second life by installing lightweight Linux operating systems, achieving speed, stability and security.",
+
+serviceTitle5: "Automation & Control",
+serviceDesc5: "Process optimization through programmed logic and intelligent control systems. Practical solutions to improve efficiency and performance.",
+
+serviceTitle6: "Data Recovery",
+serviceDesc6: "Emergency procedures for recovering valuable information from hard drives, SSDs and damaged storage devices. Your peace of mind is our priority."
     },
 
     pt: {
@@ -130,7 +172,28 @@ otBenefit1: "Acompanhamento online",
 otBenefit2: "Atualizações em tempo real",
 otBenefit3: "Disponível 24 horas por dia",
 otNote: "Para acessar, você deverá utilizar o documento informado no momento do registro do reparo.",
-otButton: "Consultar status do equipamento"
+otButton: "Consultar status do equipamento",
+
+servicesTagline: "O QUE FAZEMOS",
+servicesTitle: 'Soluções sob medida para suas <span>necessidades</span>',
+
+serviceTitle1: "Suporte Técnico & TI",
+serviceDesc1: "Assistência completa presencial e remota para pessoas, empresas e profissionais. Manutenção preventiva, otimização de sistemas e resolução rápida de falhas críticas.",
+
+serviceTitle2: "Desenvolvimento Sob Medida",
+serviceDesc2: "Projeto e desenvolvimento de software totalmente adaptado aos seus processos. Automação de tarefas, gestão inteligente de dados e otimização de fluxos de trabalho.",
+
+serviceTitle3: "Redes e Conectividade",
+serviceDesc3: "Instalação, configuração e manutenção de redes residenciais e empresariais. Soluções estáveis, seguras e otimizadas para alto desempenho.",
+
+serviceTitle4: "Recuperação de Equipamentos",
+serviceDesc4: "Não descarte equipamentos antigos ou lentos. Damos uma segunda vida instalando sistemas Linux leves, alcançando fluidez, estabilidade e segurança.",
+
+serviceTitle5: "Automação e Controle",
+serviceDesc5: "Otimização de processos através de lógica programada e sistemas inteligentes de controle. Soluções práticas para aumentar a eficiência e o desempenho.",
+
+serviceTitle6: "Recuperação de Dados",
+serviceDesc6: "Procedimentos de emergência para recuperar informações valiosas de HDs, SSDs e dispositivos danificados. Sua tranquilidade é nossa prioridade."
     }
 
 };
@@ -170,6 +233,27 @@ document.getElementById('ot-benefit-3').textContent = translations[lang].otBenef
 
 document.getElementById('ot-note').textContent = translations[lang].otNote;
 document.getElementById('ot-button').textContent = translations[lang].otButton;
+
+document.getElementById('services-tagline').textContent = translations[lang].servicesTagline;
+document.getElementById('services-title').innerHTML = translations[lang].servicesTitle;
+
+document.getElementById('service-title-1').textContent = translations[lang].serviceTitle1;
+document.getElementById('service-desc-1').textContent = translations[lang].serviceDesc1;
+
+document.getElementById('service-title-2').textContent = translations[lang].serviceTitle2;
+document.getElementById('service-desc-2').textContent = translations[lang].serviceDesc2;
+
+document.getElementById('service-title-3').textContent = translations[lang].serviceTitle3;
+document.getElementById('service-desc-3').textContent = translations[lang].serviceDesc3;
+
+document.getElementById('service-title-4').textContent = translations[lang].serviceTitle4;
+document.getElementById('service-desc-4').textContent = translations[lang].serviceDesc4;
+
+document.getElementById('service-title-5').textContent = translations[lang].serviceTitle5;
+document.getElementById('service-desc-5').textContent = translations[lang].serviceDesc5;
+
+document.getElementById('service-title-6').textContent = translations[lang].serviceTitle6;
+document.getElementById('service-desc-6').textContent = translations[lang].serviceDesc6;
 
     localStorage.setItem('language', lang);
 }
