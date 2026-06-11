@@ -65,6 +65,13 @@ const translations = {
         software: "Software",
         about: "Sobre mí",
         contact: "Contacto"
+        heroTagline: "TECNOLOGÍA QUE SIMPLIFICA TU TRABAJO",
+heroTitle: 'Soluciones <span>tecnológicas</span> que impulsan tu negocio',
+heroDescription: 'Soporte IT, redes, desarrollo de <span>software a medida</span> y automatización de procesos para particulares, profesionales y empresas.',
+btnMeeting: "Agendar reunión",
+btnRepair: "Consultar reparación",
+btnServices: "Ver servicios",
+btnWorldcup: "🏆 Fixture Mundial 2026"
     },
 
     en: {
@@ -74,6 +81,13 @@ const translations = {
         software: "Software",
         about: "About Me",
         contact: "Contact"
+        heroTagline: "TECHNOLOGY THAT SIMPLIFIES YOUR WORK",
+heroTitle: 'Technology <span>solutions</span> that boost your business',
+heroDescription: 'IT support, networks, <span>custom software</span> development and process automation for individuals, professionals and businesses.',
+btnMeeting: "Schedule meeting",
+btnRepair: "Check repair status",
+btnServices: "View services",
+btnWorldcup: "🏆 World Cup 2026 Fixture"
     },
 
     pt: {
@@ -83,6 +97,13 @@ const translations = {
         software: "Software",
         about: "Sobre Mim",
         contact: "Contato"
+        heroTagline: "TECNOLOGIA QUE SIMPLIFICA SEU TRABALHO",
+heroTitle: 'Soluções <span>tecnológicas</span> que impulsionam seu negócio',
+heroDescription: 'Suporte de TI, redes, desenvolvimento de <span>software sob medida</span> e automação de processos para particulares, profissionais e empresas.',
+btnMeeting: "Agendar reunião",
+btnRepair: "Consultar reparo",
+btnServices: "Ver serviços",
+btnWorldcup: "🏆 Tabela Copa do Mundo 2026"
     }
 
 };
@@ -102,6 +123,15 @@ function setLanguage(lang) {
     document.getElementById('m-nav-software').textContent = translations[lang].software;
     document.getElementById('m-nav-about').textContent = translations[lang].about;
     document.getElementById('m-nav-contact').textContent = translations[lang].contact;
+
+    document.getElementById('hero-tagline').textContent = translations[lang].heroTagline;
+    document.getElementById('hero-title').innerHTML = translations[lang].heroTitle;
+    document.getElementById('hero-description').innerHTML = translations[lang].heroDescription;
+
+    document.getElementById('btn-meeting').textContent = translations[lang].btnMeeting;
+    document.getElementById('btn-repair').textContent = translations[lang].btnRepair;
+    document.getElementById('btn-services').textContent = translations[lang].btnServices;
+    document.getElementById('btn-worldcup').textContent = translations[lang].btnWorldcup;
 
     localStorage.setItem('language', lang);
 }
