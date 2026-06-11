@@ -56,3 +56,78 @@ if (menuToggle && mobileMenu) {
     });
 
 }
+const translations = {
+
+    es: {
+        home: "Inicio",
+        status: "Estado de reparación",
+        services: "Servicios",
+        software: "Software",
+        about: "Sobre mí",
+        contact: "Contacto"
+    },
+
+    en: {
+        home: "Home",
+        status: "Repair Status",
+        services: "Services",
+        software: "Software",
+        about: "About Me",
+        contact: "Contact"
+    },
+
+    pt: {
+        home: "Início",
+        status: "Status do Reparo",
+        services: "Serviços",
+        software: "Software",
+        about: "Sobre Mim",
+        contact: "Contato"
+    }
+
+};
+
+function setLanguage(lang) {
+
+    document.getElementById('nav-home').textContent = translations[lang].home;
+    document.getElementById('nav-status').textContent = translations[lang].status;
+    document.getElementById('nav-services').textContent = translations[lang].services;
+    document.getElementById('nav-software').textContent = translations[lang].software;
+    document.getElementById('nav-about').textContent = translations[lang].about;
+    document.getElementById('nav-contact').textContent = translations[lang].contact;
+
+    document.getElementById('m-nav-home').textContent = translations[lang].home;
+    document.getElementById('m-nav-status').textContent = translations[lang].status;
+    document.getElementById('m-nav-services').textContent = translations[lang].services;
+    document.getElementById('m-nav-software').textContent = translations[lang].software;
+    document.getElementById('m-nav-about').textContent = translations[lang].about;
+    document.getElementById('m-nav-contact').textContent = translations[lang].contact;
+
+    localStorage.setItem('language', lang);
+}
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+
+    btn.addEventListener('click', () => {
+
+        const lang = btn.dataset.lang;
+
+        document.querySelectorAll('.lang-btn').forEach(b => {
+            b.classList.remove('active');
+        });
+
+        document.querySelectorAll(`[data-lang="${lang}"]`).forEach(b => {
+            b.classList.add('active');
+        });
+
+        setLanguage(lang);
+    });
+
+});
+
+const savedLanguage = localStorage.getItem('language') || 'es';
+setLanguage(savedLanguage);
+
+document.querySelectorAll(`[data-lang="${savedLanguage}"]`).forEach(b => {
+    b.classList.add('active');
+});
