@@ -101,8 +101,15 @@ serviceTitle5: "Automatización y Control",
 serviceDesc5: "Optimización de procesos mediante lógica programada y sistemas de control inteligentes. Soluciones concretas para mejorar la eficiencia y el rendimiento de tus equipos.",
 
 serviceTitle6: "Recuperación de Datos",
-serviceDesc6: "Protocolos de emergencia para el salvamento y extracción de información valiosa desde discos rígidos, SSD's o memorias dañadas. Tu tranquilidad es prioridad."
-    },
+serviceDesc6: "Protocolos de emergencia para el salvamento y extracción de información valiosa desde discos rígidos, SSD's o memorias dañadas. Tu tranquilidad es prioridad.",
+swTagline: "SOFTWARE & AUTOMATIZACIÓN",
+
+swTitle: 'Desarrollamos el software<br><span>que tu negocio necesita</span>',
+
+swDesc: 'Junto a <a href="https://ujautomatizaciones.com.ar" target="_blank">UJ Automatizaciones</a>, diseñamos y desarrollamos soluciones de software completamente a medida. Eliminamos las tareas repetitivas, automatizamos procesos y liberamos a tu equipo para que pueda enfocarse en lo que realmente importa: hacer crecer tu negocio.',
+
+swAppsTitle: "Algunos de nuestros desarrollos"    
+},
 
     en: {
         home: "Home",
@@ -147,7 +154,11 @@ serviceTitle5: "Automation & Control",
 serviceDesc5: "Process optimization through programmed logic and intelligent control systems. Practical solutions to improve efficiency and performance.",
 
 serviceTitle6: "Data Recovery",
-serviceDesc6: "Emergency procedures for recovering valuable information from hard drives, SSDs and damaged storage devices. Your peace of mind is our priority."
+serviceDesc6: "Emergency procedures for recovering valuable information from hard drives, SSDs and damaged storage devices. Your peace of mind is our priority.",
+swTagline: "SOFTWARE & AUTOMATION",
+swTitle: 'We develop the software<br><span>your business needs</span>',
+swDesc: 'Together with <a href="https://ujautomatizaciones.com.ar" target="_blank">UJ Automatizaciones</a>, we design and develop fully customized software solutions. We eliminate repetitive tasks, automate processes and free your team to focus on what really matters: growing your business.',
+swAppsTitle: "Some of our developments"
     },
 
     pt: {
@@ -178,7 +189,7 @@ servicesTagline: "O QUE FAZEMOS",
 servicesTitle: 'Soluções sob medida para suas <span>necessidades</span>',
 
 serviceTitle1: "Suporte Técnico & TI",
-serviceDesc1: "Assistência completa presencial e remota para pessoas, empresas e profissionais. Manutenção preventiva, otimização de sistemas e resolução rápida de falhas críticas.",
+serviceDesc1: "Assistência completa presencial e remota a particulares, empresas e profissionais. Manutenção preventiva, otimização de sistemas e resolução rápida de avarias críticas.",
 
 serviceTitle2: "Desenvolvimento Sob Medida",
 serviceDesc2: "Projeto e desenvolvimento de software totalmente adaptado aos seus processos. Automação de tarefas, gestão inteligente de dados e otimização de fluxos de trabalho.",
@@ -193,7 +204,11 @@ serviceTitle5: "Automação e Controle",
 serviceDesc5: "Otimização de processos através de lógica programada e sistemas inteligentes de controle. Soluções práticas para aumentar a eficiência e o desempenho.",
 
 serviceTitle6: "Recuperação de Dados",
-serviceDesc6: "Procedimentos de emergência para recuperar informações valiosas de HDs, SSDs e dispositivos danificados. Sua tranquilidade é nossa prioridade."
+serviceDesc6: "Procedimentos de emergência para recuperar informações valiosas de HDs, SSDs e dispositivos danificados. Sua tranquilidade é nossa prioridade.",
+swTagline: "SOFTWARE & AUTOMAÇÃO",
+swTitle: 'Desenvolvemos o software<br><span>que sua empresa precisa</span>',
+swDesc: 'Junto com <a href="https://ujautomatizaciones.com.ar" target="_blank">UJ Automatizaciones</a>, projetamos e desenvolvemos soluções de software totalmente personalizadas. Eliminamos tarefas repetitivas, automatizamos processos e liberamos sua equipe para focar no que realmente importa: fazer seu negócio crescer.',
+swAppsTitle: "Alguns dos nossos desenvolvimentos"
     }
 
 };
@@ -254,6 +269,10 @@ document.getElementById('service-desc-5').textContent = translations[lang].servi
 
 document.getElementById('service-title-6').textContent = translations[lang].serviceTitle6;
 document.getElementById('service-desc-6').textContent = translations[lang].serviceDesc6;
+document.getElementById('sw-tagline').textContent = translations[lang].swTagline;
+document.getElementById('sw-title').innerHTML = translations[lang].swTitle;
+document.getElementById('sw-desc').innerHTML = translations[lang].swDesc;
+document.getElementById('sw-apps-title').textContent = translations[lang].swAppsTitle;
 
     localStorage.setItem('language', lang);
 }
