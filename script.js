@@ -114,7 +114,73 @@ appName1: "Sistema de Órdenes de Trabajo",
 appBadge1: "Talleres de reparación",
 appDesc1: "Gestión completa de órdenes de trabajo para talleres. Panel de administración para el equipo técnico y portal de consulta de estado para el cliente en tiempo real.",
 appBtn1a: "Panel Taller",
-appBtn1b: "Portal Cliente"    
+appBtn1b: "Portal Cliente",
+
+appName2: "Control de Vencimientos",
+appBadge2: "Farmacias",
+appDesc2: "Seguimiento automatizado de fechas de vencimiento de productos. Alertas preventivas para evitar pérdidas y garantizar el cumplimiento normativo.",
+appBtn2: "Ver demo",
+
+appName3: "Control de Stock",
+appBadge3: "Comercios y depósitos",
+appDesc3: "Gestión de inventario en tiempo real. Controlá entradas, salidas, stock mínimo y movimientos desde cualquier dispositivo.",
+appBtn3: "Ver demo",
+
+appName4: "Inscripción a Mesas de Examen",
+appBadge4: "Escuelas secundarias",
+appDesc4: "Sistema digital para que los alumnos se inscriban a mesas de examen de forma autónoma. Simplifica la gestión administrativa y elimina el papeleo.",
+appBtn4: "Ver demo",
+
+feature1: "Años de<br>experiencia",
+feature2: "Atención personalizada",
+
+feature3Title: "Software",
+feature3: "Desarrollo a medida",
+
+feature4Title: "Redes",
+feature4: "Conectividad profesional",
+
+feature5Title: "Soporte",
+feature5: "Asistencia integral IT",
+
+aboutTagline: "SOBRE MÍ",
+
+aboutTitle: "+ de 20 años transformando tecnología en soluciones",
+
+aboutText1: "Soy Juan Pablo, Técnico Electrónico, Técnico en Informática de Gestión y Docente, con más de 20 años de trayectoria dedicados a la tecnología, la reparación de equipos informáticos y el desarrollo de soluciones para particulares, profesionales y empresas.",
+
+aboutText2: "A lo largo de mi carrera he trabajado en soporte técnico, infraestructura, redes, programación, automatización y control, participando en proyectos que combinan experiencia técnica, innovación y resolución práctica de problemas. Mi objetivo siempre ha sido transformar la tecnología en una herramienta útil, accesible y orientada a resultados.",
+
+aboutText3: "Actualmente combino mi actividad profesional con la docencia, compartiendo conocimientos mientras continúo desarrollando soluciones basadas en Inteligencia Artificial, Automatización de Procesos, Arduino y Software a Medida. Creo firmemente en la capacitación continua y en la mejora constante como pilares fundamentales para ofrecer servicios modernos, eficientes y adaptados a las necesidades reales de cada cliente.",
+
+aboutBadge1: "⚡ +20 años de experiencia",
+aboutBadge2: "⚙️ Automatización y Control",
+aboutBadge3: "💻 Desarrollo de Software",
+aboutBadge4: "🔧 Soporte Técnico IT",
+aboutBadge5: "📚 Docencia y Capacitación",
+
+contactTagline: "CONTACTO",
+
+contactTitle: "¿Necesitas ayuda con tecnología?",
+
+contactDescription: "Estoy disponible para ayudarte con soporte técnico, desarrollo de software, automatización de procesos, redes, conectividad y asesoramiento tecnológico. Elegí el medio de contacto que prefieras.",
+
+contactCardTitle1: "WhatsApp",
+contactCardDesc1: "Consulta rápida y personalizada",
+
+contactCardTitle2: "Agendar reunión",
+contactCardDesc2: "Elegí fecha y horario disponible",
+
+contactCardTitle3: "Email",
+contactCardTitle4: "Instagram",
+
+footerDescription: "Soluciones tecnológicas para personas, profesionales y empresas.",
+footerLinkHome: "Inicio",
+footerLinkServices: "Servicios",
+footerLinkSoftware: "Software",
+footerLinkAbout: "Sobre mí",
+footerLinkContact: "Contacto",
+footerSlogan: "+ de 20 años transformando tecnología en soluciones."
 },
 
     en: {
@@ -170,7 +236,73 @@ appName1: "Work Order Management System",
 appBadge1: "Repair workshops",
 appDesc1: "Complete work order management for repair workshops. Administration panel for technicians and real-time customer status portal.",
 appBtn1a: "Workshop Panel",
-appBtn1b: "Customer Portal"
+appBtn1b: "Customer Portal",
+
+appName2: "Expiration Control",
+appBadge2: "Pharmacies",
+appDesc2: "Automated monitoring of product expiration dates. Preventive alerts to avoid losses and ensure regulatory compliance.",
+appBtn2: "View Demo",
+
+appName3: "Inventory Control",
+appBadge3: "Businesses & Warehouses",
+appDesc3: "Real-time inventory management. Track incoming and outgoing products, minimum stock levels and movements from any device.",
+appBtn3: "View Demo",
+
+appName4: "Exam Registration",
+appBadge4: "High Schools",
+appDesc4: "Digital system that allows students to register for exams independently. Simplifies administration and eliminates paperwork.",
+appBtn4: "View Demo",
+
+feature1: "Years of<br>experience",
+feature2: "Personalized service",
+
+feature3Title: "Software",
+feature3: "Custom development",
+
+feature4Title: "Networks",
+feature4: "Professional connectivity",
+
+feature5Title: "Support",
+feature5: "Comprehensive IT support",
+
+aboutTagline: "ABOUT ME",
+
+aboutTitle: "20+ years transforming technology into solutions",
+
+aboutText1: "I am Juan Pablo, Electronics Technician, IT Management Technician and Teacher, with more than 20 years of experience dedicated to technology, computer repair and the development of solutions for individuals, professionals and businesses.",
+
+aboutText2: "Throughout my career I have worked in technical support, infrastructure, networking, programming, automation and control, participating in projects that combine technical expertise, innovation and practical problem solving. My goal has always been to transform technology into a useful, accessible and results-oriented tool.",
+
+aboutText3: "I currently combine my professional activity with teaching, sharing knowledge while continuing to develop solutions based on Artificial Intelligence, Process Automation, Arduino and Custom Software. I strongly believe in continuous learning and constant improvement as key pillars for delivering modern, efficient services adapted to real customer needs.",
+
+aboutBadge1: "⚡ 20+ years of experience",
+aboutBadge2: "⚙️ Automation & Control",
+aboutBadge3: "💻 Software Development",
+aboutBadge4: "🔧 IT Technical Support",
+aboutBadge5: "📚 Teaching & Training",
+
+contactTagline: "CONTACT",
+
+contactTitle: "Need help with technology?",
+
+contactDescription: "I'm available to help you with technical support, software development, process automation, networking, connectivity and technology consulting. Choose your preferred contact method.",
+
+contactCardTitle1: "WhatsApp",
+contactCardDesc1: "Fast and personalized assistance",
+
+contactCardTitle2: "Schedule Meeting",
+contactCardDesc2: "Choose an available date and time",
+
+contactCardTitle3: "Email",
+contactCardTitle4: "Instagram",
+
+footerDescription: "Technology solutions for individuals, professionals and businesses.",
+footerLinkHome: "Home",
+footerLinkServices: "Services",
+footerLinkSoftware: "Software",
+footerLinkAbout: "About Me",
+footerLinkContact: "Contact",
+footerSlogan: "20+ years transforming technology into solutions."
     },
 
     pt: {
@@ -226,7 +358,73 @@ appName1: "Sistema de Ordens de Serviço",
 appBadge1: "Oficinas de reparo",
 appDesc1: "Gestão completa de ordens de serviço para oficinas. Painel administrativo para técnicos e portal de acompanhamento em tempo real para clientes.",
 appBtn1a: "Painel da Oficina",
-appBtn1b: "Portal do Cliente"
+appBtn1b: "Portal do Cliente",
+
+appName2: "Controle de Validades",
+appBadge2: "Farmácias",
+appDesc2: "Monitoramento automatizado das datas de validade dos produtos. Alertas preventivos para evitar perdas e garantir conformidade regulatória.",
+appBtn2: "Ver demonstração",
+
+appName3: "Controle de Estoque",
+appBadge3: "Comércios e Depósitos",
+appDesc3: "Gestão de estoque em tempo real. Controle entradas, saídas, estoque mínimo e movimentações de qualquer dispositivo.",
+appBtn3: "Ver demonstração",
+
+appName4: "Inscrição em Exames",
+appBadge4: "Escolas Secundárias",
+appDesc4: "Sistema digital para que os alunos se inscrevam nos exames de forma autônoma. Simplifica a gestão administrativa e elimina a papelada.",
+appBtn4: "Ver demonstração",
+
+feature1: "Anos de<br>experiência",
+feature2: "Atendimento personalizado",
+
+feature3Title: "Software",
+feature3: "Desenvolvimento sob medida",
+
+feature4Title: "Redes",
+feature4: "Conectividade profissional",
+
+feature5Title: "Suporte",
+feature5: "Assistência completa de TI",
+
+aboutTagline: "SOBRE MIM",
+
+aboutTitle: "Mais de 20 anos transformando tecnologia em soluções",
+
+aboutText1: "Sou Juan Pablo, Técnico em Eletrônica, Técnico em Informática de Gestão e Professor, com mais de 20 anos de experiência dedicados à tecnologia, reparação de equipamentos informáticos e desenvolvimento de soluções para pessoas, profissionais e empresas.",
+
+aboutText2: "Ao longo da minha carreira trabalhei com suporte técnico, infraestrutura, redes, programação, automação e controle, participando de projetos que combinam experiência técnica, inovação e resolução prática de problemas. Meu objetivo sempre foi transformar a tecnologia em uma ferramenta útil, acessível e orientada para resultados.",
+
+aboutText3: "Atualmente combino minha atividade profissional com a docência, compartilhando conhecimento enquanto continuo desenvolvendo soluções baseadas em Inteligência Artificial, Automação de Processos, Arduino e Software Sob Medida. Acredito firmemente na capacitação contínua e na melhoria constante como pilares fundamentais para oferecer serviços modernos, eficientes e adaptados às necessidades reais de cada cliente.",
+
+aboutBadge1: "⚡ Mais de 20 anos de experiência",
+aboutBadge2: "⚙️ Automação e Controle",
+aboutBadge3: "💻 Desenvolvimento de Software",
+aboutBadge4: "🔧 Suporte Técnico de TI",
+aboutBadge5: "📚 Ensino e Capacitação",
+
+contactTagline: "CONTATO",
+
+contactTitle: "Precisa de ajuda com tecnologia?",
+
+contactDescription: "Estou disponível para ajudar com suporte técnico, desenvolvimento de software, automação de processos, redes, conectividade e consultoria tecnológica. Escolha o meio de contato que preferir.",
+
+contactCardTitle1: "WhatsApp",
+contactCardDesc1: "Atendimento rápido e personalizado",
+
+contactCardTitle2: "Agendar reunião",
+contactCardDesc2: "Escolha uma data e horário disponíveis",
+
+contactCardTitle3: "Email",
+contactCardTitle4: "Instagram",
+
+footerDescription: "Soluções tecnológicas para pessoas, profissionais e empresas.",
+footerLinkHome: "Início",
+footerLinkServices: "Serviços",
+footerLinkSoftware: "Software",
+footerLinkAbout: "Sobre Mim",
+footerLinkContact: "Contato",
+footerSlogan: "Mais de 20 anos transformando tecnologia em soluções."
     }
 
 };
@@ -298,7 +496,69 @@ document.getElementById('app-desc-1').textContent = translations[lang].appDesc1;
 document.getElementById('app-btn-1a').textContent = translations[lang].appBtn1a;
 document.getElementById('app-btn-1b').textContent = translations[lang].appBtn1b;
 
-    localStorage.setItem('language', lang);
+document.getElementById('app-name-2').textContent = translations[lang].appName2;
+document.getElementById('app-badge-2').textContent = translations[lang].appBadge2;
+document.getElementById('app-desc-2').textContent = translations[lang].appDesc2;
+document.getElementById('app-btn-2').textContent = translations[lang].appBtn2;
+
+document.getElementById('app-name-3').textContent = translations[lang].appName3;
+document.getElementById('app-badge-3').textContent = translations[lang].appBadge3;
+document.getElementById('app-desc-3').textContent = translations[lang].appDesc3;
+document.getElementById('app-btn-3').textContent = translations[lang].appBtn3;
+
+document.getElementById('app-name-4').textContent = translations[lang].appName4;
+document.getElementById('app-badge-4').textContent = translations[lang].appBadge4;
+document.getElementById('app-desc-4').textContent = translations[lang].appDesc4;
+document.getElementById('app-btn-4').textContent = translations[lang].appBtn4;
+
+document.getElementById('feature-1').innerHTML = translations[lang].feature1;
+document.getElementById('feature-2').textContent = translations[lang].feature2;
+
+document.getElementById('feature-3-title').textContent = translations[lang].feature3Title;
+document.getElementById('feature-3').textContent = translations[lang].feature3;
+
+document.getElementById('feature-4-title').textContent = translations[lang].feature4Title;
+document.getElementById('feature-4').textContent = translations[lang].feature4;
+
+document.getElementById('feature-5-title').textContent = translations[lang].feature5Title;
+document.getElementById('feature-5').textContent = translations[lang].feature5;
+
+document.getElementById('about-tagline').textContent = translations[lang].aboutTagline;
+
+document.getElementById('about-title').textContent = translations[lang].aboutTitle;
+
+document.getElementById('about-text-1').textContent = translations[lang].aboutText1;
+document.getElementById('about-text-2').textContent = translations[lang].aboutText2;
+document.getElementById('about-text-3').textContent = translations[lang].aboutText3;
+
+document.getElementById('about-badge-1').textContent = translations[lang].aboutBadge1;
+document.getElementById('about-badge-2').textContent = translations[lang].aboutBadge2;
+document.getElementById('about-badge-3').textContent = translations[lang].aboutBadge3;
+document.getElementById('about-badge-4').textContent = translations[lang].aboutBadge4;
+document.getElementById('about-badge-5').textContent = translations[lang].aboutBadge5;
+
+document.getElementById('contact-tagline').textContent = translations[lang].contactTagline;
+document.getElementById('contact-title').textContent = translations[lang].contactTitle;
+document.getElementById('contact-description').textContent = translations[lang].contactDescription;
+document.getElementById('contact-card-title-1').textContent = translations[lang].contactCardTitle1;
+document.getElementById('contact-card-desc-1').textContent = translations[lang].contactCardDesc1;
+document.getElementById('contact-card-title-2').textContent = translations[lang].contactCardTitle2;
+document.getElementById('contact-card-desc-2').textContent = translations[lang].contactCardDesc2;
+document.getElementById('contact-card-title-3').textContent = translations[lang].contactCardTitle3;
+document.getElementById('contact-card-title-4').textContent = translations[lang].contactCardTitle4;
+
+document.getElementById('footer-description').textContent = translations[lang].footerDescription;
+document.getElementById('footer-link-home').textContent = translations[lang].footerLinkHome;
+document.getElementById('footer-link-services').textContent = translations[lang].footerLinkServices;
+document.getElementById('footer-link-software').textContent = translations[lang].footerLinkSoftware;
+document.getElementById('footer-link-about').textContent = translations[lang].footerLinkAbout;
+document.getElementById('footer-link-contact').textContent = translations[lang].footerLinkContact;
+
+document.getElementById('footer-slogan').textContent = translations[lang].footerSlogan;
+
+document.documentElement.lang = lang;
+
+localStorage.setItem('language', lang);
 }
 
 document.querySelectorAll('.lang-btn').forEach(btn => {
