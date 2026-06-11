@@ -33,19 +33,25 @@ const mobileMenu = document.getElementById('mobile-menu');
 
 if (menuToggle && mobileMenu) {
 
-    menuToggle.addEventListener('click', () => {
-
+    menuToggle.addEventListener('click', (event) => {
+        event.stopPropagation();
         mobileMenu.classList.toggle('open');
-
     });
 
     mobileMenu.querySelectorAll('a').forEach(link => {
-
         link.addEventListener('click', () => {
-
             mobileMenu.classList.remove('open');
-
         });
+    });
+
+    document.addEventListener('pointerdown', (event) => {
+
+        const clickDentroDelMenu = mobileMenu.contains(event.target);
+        const clickEnBoton = menuToggle.contains(event.target);
+
+        if (!clickDentroDelMenu && !clickEnBoton) {
+            mobileMenu.classList.remove('open');
+        }
 
     });
 
