@@ -64,7 +64,7 @@ const translations = {
         services: "Servicios",
         software: "Software",
         about: "Sobre mí",
-        contact: "Contacto"
+        contact: "Contacto",
         heroTagline: "TECNOLOGÍA QUE SIMPLIFICA TU TRABAJO",
 heroTitle: 'Soluciones <span>tecnológicas</span> que impulsan tu negocio',
 heroDescription: 'Soporte IT, redes, desarrollo de <span>software a medida</span> y automatización de procesos para particulares, profesionales y empresas.',
@@ -80,7 +80,7 @@ btnWorldcup: "🏆 Fixture Mundial 2026"
         services: "Services",
         software: "Software",
         about: "About Me",
-        contact: "Contact"
+        contact: "Contact",
         heroTagline: "TECHNOLOGY THAT SIMPLIFIES YOUR WORK",
 heroTitle: 'Technology <span>solutions</span> that boost your business',
 heroDescription: 'IT support, networks, <span>custom software</span> development and process automation for individuals, professionals and businesses.',
@@ -96,7 +96,7 @@ btnWorldcup: "🏆 World Cup 2026 Fixture"
         services: "Serviços",
         software: "Software",
         about: "Sobre Mim",
-        contact: "Contato"
+        contact: "Contato",
         heroTagline: "TECNOLOGIA QUE SIMPLIFICA SEU TRABALHO",
 heroTitle: 'Soluções <span>tecnológicas</span> que impulsionam seu negócio',
 heroDescription: 'Suporte de TI, redes, desenvolvimento de <span>software sob medida</span> e automação de processos para particulares, profissionais e empresas.',
