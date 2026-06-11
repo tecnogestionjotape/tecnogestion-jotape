@@ -71,7 +71,16 @@ heroDescription: 'Soporte IT, redes, desarrollo de <span>software a medida</span
 btnMeeting: "Agendar reunión",
 btnRepair: "Consultar reparación",
 btnServices: "Ver servicios",
-btnWorldcup: "🏆 Fixture Mundial 2026"
+btnWorldcup: "🏆 Fixture Mundial 2026",
+
+otTagline: "CONSULTA ONLINE",
+otTitle: "¿Tu equipo está en reparación?",
+otDescription: "Consultá el estado de tu Orden de Trabajo en cualquier momento. Nuestro sistema te permite verificar avances, observaciones técnicas y el estado actual de la reparación.",
+otBenefit1: "Seguimiento online",
+otBenefit2: "Actualizaciones en tiempo real",
+otBenefit3: "Disponible las 24 horas",
+otNote: "Para ingresar deberás utilizar el DNI o CUIT informado al momento de registrar la reparación.",
+otButton: "Consultar estado de mi equipo"
     },
 
     en: {
@@ -87,7 +96,16 @@ heroDescription: 'IT support, networks, <span>custom software</span> development
 btnMeeting: "Schedule meeting",
 btnRepair: "Check repair status",
 btnServices: "View services",
-btnWorldcup: "🏆 World Cup 2026 Fixture"
+btnWorldcup: "🏆 2026 World Cup Fixture",
+
+otTagline: "ONLINE INQUIRY",
+otTitle: "Is your equipment under repair?",
+otDescription: "Check the status of your Work Order at any time. Our system allows you to verify progress, technical notes and the current repair status.",
+otBenefit1: "Online tracking",
+otBenefit2: "Real-time updates",
+otBenefit3: "Available 24 hours a day",
+otNote: "To access, you must use the ID provided when the repair was registered.",
+otButton: "Check my equipment status"
     },
 
     pt: {
@@ -103,7 +121,16 @@ heroDescription: 'Suporte de TI, redes, desenvolvimento de <span>software sob me
 btnMeeting: "Agendar reunião",
 btnRepair: "Consultar reparo",
 btnServices: "Ver serviços",
-btnWorldcup: "🏆 Tabela Copa do Mundo 2026"
+btnWorldcup: "🏆 Copa do Mundo 2026",
+
+otTagline: "CONSULTA ONLINE",
+otTitle: "Seu equipamento está em reparo?",
+otDescription: "Consulte o status da sua Ordem de Serviço a qualquer momento. Nosso sistema permite verificar o andamento, observações técnicas e o status atual do reparo.",
+otBenefit1: "Acompanhamento online",
+otBenefit2: "Atualizações em tempo real",
+otBenefit3: "Disponível 24 horas por dia",
+otNote: "Para acessar, você deverá utilizar o documento informado no momento do registro do reparo.",
+otButton: "Consultar status do equipamento"
     }
 
 };
@@ -132,6 +159,17 @@ function setLanguage(lang) {
     document.getElementById('btn-repair').textContent = translations[lang].btnRepair;
     document.getElementById('btn-services').textContent = translations[lang].btnServices;
     document.getElementById('btn-worldcup').textContent = translations[lang].btnWorldcup;
+
+    document.getElementById('ot-tagline').textContent = translations[lang].otTagline;
+document.getElementById('ot-title').textContent = translations[lang].otTitle;
+document.getElementById('ot-description').textContent = translations[lang].otDescription;
+
+document.getElementById('ot-benefit-1').textContent = translations[lang].otBenefit1;
+document.getElementById('ot-benefit-2').textContent = translations[lang].otBenefit2;
+document.getElementById('ot-benefit-3').textContent = translations[lang].otBenefit3;
+
+document.getElementById('ot-note').textContent = translations[lang].otNote;
+document.getElementById('ot-button').textContent = translations[lang].otButton;
 
     localStorage.setItem('language', lang);
 }
