@@ -556,6 +556,59 @@ document.getElementById('footer-link-contact').textContent = translations[lang].
 
 document.getElementById('footer-slogan').textContent = translations[lang].footerSlogan;
 
+const serviceMarqueeItems = {
+    es: [
+        ['fa-computer', "Reparación de PC's y Notebooks"],
+        ['fa-print', "Impresoras"],
+        ['fa-graduation-cap', "Capacitaciones"],
+        ['fa-lightbulb', "Asesoramiento Tecnológico"],
+        ['fa-network-wired', "Redes y Conectividad"],
+        ['fa-gears', "Automatización de Procesos"],
+        ['fa-code', "Software a Medida"],
+        ['fa-database', "Recuperación de Datos"],
+        ['fa-headset', "Soporte IT"]
+    ],
+
+    en: [
+        ['fa-computer', "PC & Notebook Repair"],
+        ['fa-print', "Printers"],
+        ['fa-graduation-cap', "Training"],
+        ['fa-lightbulb', "Technology Consulting"],
+        ['fa-network-wired', "Networks & Connectivity"],
+        ['fa-gears', "Process Automation"],
+        ['fa-code', "Custom Software"],
+        ['fa-database', "Data Recovery"],
+        ['fa-headset', "IT Support"]
+    ],
+
+    pt: [
+        ['fa-computer', "Reparo de PCs e Notebooks"],
+        ['fa-print', "Impressoras"],
+        ['fa-graduation-cap', "Capacitações"],
+        ['fa-lightbulb', "Consultoria Tecnológica"],
+        ['fa-network-wired', "Redes e Conectividade"],
+        ['fa-gears', "Automação de Processos"],
+        ['fa-code', "Software Sob Medida"],
+        ['fa-database', "Recuperação de Dados"],
+        ['fa-headset', "Suporte de TI"]
+    ]
+};
+
+const servicesTrack = document.getElementById('services-track');
+
+if (servicesTrack) {
+    const repeatedItems = [
+        ...serviceMarqueeItems[lang],
+        ...serviceMarqueeItems[lang],
+        ...serviceMarqueeItems[lang]
+    ];
+
+    servicesTrack.innerHTML = repeatedItems.map(item => `
+        <span><i class="fa-solid ${item[0]}"></i> ${item[1]}</span>
+        <span><i class="fa-solid fa-circle"></i></span>
+    `).join('');
+}
+
 document.documentElement.lang = lang;
 
 localStorage.setItem('language', lang);
