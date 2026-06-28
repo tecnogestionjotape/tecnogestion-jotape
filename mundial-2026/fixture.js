@@ -460,35 +460,72 @@ function renderGrupos(){
 function renderClasificados(){
   const container = document.getElementById("clasificados-container");
 
-  const clasificados = [
-    "🇿🇦 Sudáfrica","🇨🇦 Canadá",
-    "🇧🇷 Brasil","🇯🇵 Japón",
-    "🇩🇪 Alemania","🇵🇾 Paraguay",
-    "🇳🇱 Países Bajos","🇲🇦 Marruecos",
-    "🇨🇮 Costa de Marfil","🇳🇴 Noruega",
-    "🇫🇷 Francia","🇸🇪 Suecia",
-    "🇲🇽 México","🇪🇨 Ecuador",
-    "🏴 Inglaterra","🇨🇩 RD Congo",
-    "🇧🇪 Bélgica","🇸🇳 Senegal",
-    "🇺🇸 Estados Unidos","🇧🇦 Bosnia y Herzegovina",
-    "🇪🇸 España","🇦🇹 Austria",
-    "🇵🇹 Portugal","🇭🇷 Croacia",
-    "🇨🇭 Suiza","🇩🇿 Argelia",
-    "🇦🇺 Australia","🇪🇬 Egipto",
-    "🇦🇷 Argentina","🇨🇻 Cabo Verde",
-    "🇨🇴 Colombia","🇬🇭 Ghana"
+  const gruposClasificados = [
+    {
+      titulo:"🥇 Primeros de grupo",
+      equipos:[
+        "🇲🇽 México",
+        "🇨🇭 Suiza",
+        "🇧🇷 Brasil",
+        "🇺🇸 Estados Unidos",
+        "🇩🇪 Alemania",
+        "🇳🇱 Países Bajos",
+        "🇧🇪 Bélgica",
+        "🇪🇸 España",
+        "🇫🇷 Francia",
+        "🇦🇷 Argentina",
+        "🇨🇴 Colombia",
+        "🏴 Inglaterra"
+      ]
+    },
+    {
+      titulo:"🥈 Segundos de grupo",
+      equipos:[
+        "🇿🇦 Sudáfrica",
+        "🇨🇦 Canadá",
+        "🇲🇦 Marruecos",
+        "🇦🇺 Australia",
+        "🇨🇮 Costa de Marfil",
+        "🇯🇵 Japón",
+        "🇪🇬 Egipto",
+        "🇨🇻 Cabo Verde",
+        "🇳🇴 Noruega",
+        "🇦🇹 Austria",
+        "🇵🇹 Portugal",
+        "🇭🇷 Croacia"
+      ]
+    },
+    {
+      titulo:"🥉 Mejores terceros",
+      equipos:[
+        "🇨🇩 RD Congo",
+        "🇸🇪 Suecia",
+        "🇪🇨 Ecuador",
+        "🇬🇭 Ghana",
+        "🇧🇦 Bosnia y Herzegovina",
+        "🇩🇿 Argelia",
+        "🇵🇾 Paraguay",
+        "🇸🇳 Senegal"
+      ]
+    }
   ];
 
   container.innerHTML = `
     <div class="clasificados-card">
-      <div class="clasificados-grid">
-        ${clasificados.map((equipo,i)=>`
-          <div class="clasificado-chip">
-            <span class="clasificado-numero">${i+1}</span>
-            ${formatearEquipo(equipo)}
+      ${gruposClasificados.map(grupo=>`
+        <div class="clasificados-bloque">
+          <h3>${grupo.titulo}</h3>
+
+          <div class="clasificados-grid">
+            ${grupo.equipos.map((equipo,i)=>`
+              <div class="clasificado-chip">
+                <span class="clasificado-numero">${i+1}</span>
+                ${formatearEquipo(equipo)}
+              </div>
+            `).join("")}
           </div>
-        `).join("")}
-      </div>
+        </div>
+      `).join("")}
     </div>
   `;
 }
