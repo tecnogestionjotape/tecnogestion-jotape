@@ -109,37 +109,37 @@ const rondas = [
     nombre:"Ronda de 32",
     idHtml:"ronda-32",
     partidos:[
-  ["M73","2° Grupo A","2° Grupo B","28 junio","Los Ángeles"],
-  ["M74","1° Grupo C","2° Grupo F","29 junio","Houston"],
-  ["M75","1° Grupo E","3° Grupo D","29 junio","Boston"],
-  ["M76","1° Grupo F","2° Grupo C","29 junio","Monterrey"],
-  ["M77","2° Grupo E","2° Grupo I","30 junio","Dallas"],
-  ["M78","1° Grupo I","3° Grupo F","30 junio","New York New Jersey"],
-  ["M79","1° Grupo A","3° Grupo E","30 junio","Ciudad de México"],
-  ["M80","1° Grupo L","3° Grupo K","1 julio","Atlanta"],
-  ["M81","1° Grupo G","3° Grupo I","1 julio","Seattle"],
-  ["M82","1° Grupo D","3° Grupo B","1 julio","San Francisco Bay Area"],
-  ["M83","1° Grupo H","2° Grupo J","2 julio","Los Ángeles"],
-  ["M84","2° Grupo K","2° Grupo L","2 julio","Toronto"],
-  ["M85","1° Grupo B","3° Grupo J","2 julio","Vancouver"],
-  ["M86","2° Grupo D","2° Grupo G","3 julio","Dallas"],
-  ["M87","1° Grupo J","2° Grupo H","3 julio","Miami"],
-  ["M88","1° Grupo K","3° Grupo L","3 julio","Kansas City"]
-]
+      ["M73","🇿🇦 Sudáfrica","🇨🇦 Canadá","28 junio","Los Ángeles"],
+      ["M74","🇧🇷 Brasil","🇯🇵 Japón","29 junio","Houston"],
+      ["M75","🇩🇪 Alemania","🇵🇾 Paraguay","29 junio","Boston"],
+      ["M76","🇳🇱 Países Bajos","🇲🇦 Marruecos","29 junio","Monterrey"],
+      ["M77","🇨🇮 Costa de Marfil","🇳🇴 Noruega","30 junio","Dallas"],
+      ["M78","🇫🇷 Francia","🇸🇪 Suecia","30 junio","New York New Jersey"],
+      ["M79","🇲🇽 México","🇪🇨 Ecuador","30 junio","Ciudad de México"],
+      ["M80","🏴 Inglaterra","🇨🇩 RD Congo","1 julio","Atlanta"],
+      ["M81","🇧🇪 Bélgica","🇸🇳 Senegal","1 julio","Seattle"],
+      ["M82","🇺🇸 Estados Unidos","🇧🇦 Bosnia y Herzegovina","1 julio","San Francisco Bay Area"],
+      ["M83","🇪🇸 España","🇦🇹 Austria","2 julio","Los Ángeles"],
+      ["M84","🇵🇹 Portugal","🇭🇷 Croacia","2 julio","Toronto"],
+      ["M85","🇨🇭 Suiza","🇩🇿 Argelia","2 julio","Vancouver"],
+      ["M86","🇦🇺 Australia","🇪🇬 Egipto","3 julio","Dallas"],
+      ["M87","🇦🇷 Argentina","🇨🇻 Cabo Verde","3 julio","Miami"],
+      ["M88","🇨🇴 Colombia","🇬🇭 Ghana","3 julio","Kansas City"]
+    ]
   },
   {
     nombre:"Octavos de final",
     idHtml:"octavos",
     partidos:[
-  ["M89","Ganador M73","Ganador M76","4 julio","Houston"],
-  ["M90","Ganador M75","Ganador M78","4 julio","Philadelphia"],
-  ["M91","Ganador M74","Ganador M77","5 julio","New York New Jersey"],
-  ["M92","Ganador M79","Ganador M80","5 julio","Ciudad de México"],
-  ["M93","Ganador M84","Ganador M83","6 julio","Dallas"],
-  ["M94","Ganador M82","Ganador M81","6 julio","Seattle"],
-  ["M95","Ganador M87","Ganador M86","7 julio","Atlanta"],
-  ["M96","Ganador M85","Ganador M88","7 julio","Vancouver"]
-]
+      ["M89","Ganador M73","Ganador M76","4 julio","Houston"],
+      ["M90","Ganador M75","Ganador M78","4 julio","Philadelphia"],
+      ["M91","Ganador M74","Ganador M77","5 julio","New York New Jersey"],
+      ["M92","Ganador M79","Ganador M80","5 julio","Ciudad de México"],
+      ["M93","Ganador M84","Ganador M83","6 julio","Dallas"],
+      ["M94","Ganador M82","Ganador M81","6 julio","Seattle"],
+      ["M95","Ganador M87","Ganador M86","7 julio","Atlanta"],
+      ["M96","Ganador M85","Ganador M88","7 julio","Vancouver"]
+    ]
   },
   {
     nombre:"Cuartos de final",
