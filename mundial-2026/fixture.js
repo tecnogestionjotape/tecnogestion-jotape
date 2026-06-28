@@ -167,7 +167,7 @@ const RESULTADOS_GRUPOS_FIFA = {
 
 const rondas = [
   {
-    nombre:"Ronda de 32",
+    nombre:"16avos de Final",
     idHtml:"ronda-32",
     partidos:[
       ["M73","🇿🇦 Sudáfrica","🇨🇦 Canadá","28 junio","Los Ángeles"],
@@ -189,7 +189,7 @@ const rondas = [
     ]
   },
   {
-    nombre:"Octavos de final",
+    nombre:"Octavos de Final",
     idHtml:"octavos",
     partidos:[
       ["M89","Ganador M73","Ganador M76","4 julio","Houston"],
@@ -203,7 +203,7 @@ const rondas = [
     ]
   },
   {
-    nombre:"Cuartos de final",
+    nombre:"Cuartos de Final",
     idHtml:"cuartos",
     partidos:[
       ["M97","Ganador M90","Ganador M89","9 julio","Boston"],
@@ -221,7 +221,7 @@ const rondas = [
     ]
   },
   {
-    nombre:"Tercer puesto",
+    nombre:"Partido por el 3.er Puesto",
     idHtml:"tercer-puesto",
     partidos:[
       ["M103","Perdedor M101","Perdedor M102","18 julio","Miami"]
@@ -242,6 +242,7 @@ function cargarResultadosIniciales(){
 
   Object.keys(guardado).forEach(id=>{
     const numero = Number(id.replace("M",""));
+
     if(numero >= 73){
       eliminatoriasGuardadas[id] = guardado[id];
     }
@@ -260,28 +261,13 @@ function guardar(){
 
   Object.keys(resultados).forEach(id=>{
     const numero = Number(id.replace("M",""));
+
     if(numero >= 73){
       soloEliminatorias[id] = resultados[id];
     }
   });
 
   localStorage.setItem(STORAGE_KEY, JSON.stringify(soloEliminatorias));
-}
-
-function faseGruposCompleta(){
-  return true;
-}
-
-function grupoCompleto(grupo){
-  return true;
-}
-
-function grupoTienePartidosCompletos(grupo){
-  return true;
-}
-
-function hayDatosParaTerceros(){
-  return true;
 }
 
 function formatearEquipo(equipo){
@@ -295,6 +281,14 @@ function formatearEquipo(equipo){
       <span class="equipo-nombre">${nombre}</span>
     </div>
   `;
+}
+
+function ordenarTabla(a,b){
+  return b.pts - a.pts ||
+         b.dg - a.dg ||
+         b.gf - a.gf ||
+         a.gc - b.gc ||
+         a.equipo.localeCompare(b.equipo);
 }
 
 function calcularTabla(grupo){
@@ -356,39 +350,6 @@ function calcularTabla(grupo){
   }).sort(ordenarTabla);
 }
 
-function ordenarTabla(a,b){
-  return b.pts - a.pts ||
-         b.dg - a.dg ||
-         b.gf - a.gf ||
-         a.gc - b.gc ||
-         a.equipo.localeCompare(b.equipo);
-}
-
-function obtenerClasificados(){
-  const data = {};
-
-  Object.keys(equiposPorGrupo).forEach(grupo=>{
-    const tabla = calcularTabla(grupo);
-
-    data[grupo] = {
-      primero: tabla[0],
-      segundo: tabla[1],
-      tercero: tabla[2],
-      tabla,
-      completo:true
-    };
-  });
-
-  return data;
-}
-
-function obtenerMejoresTerceros(){
-  return Object.keys(equiposPorGrupo)
-    .map(g=>calcularTabla(g)[2])
-    .sort(ordenarTabla)
-    .slice(0,8);
-}
-
 function resolverTexto(texto){
   if(texto.startsWith("Ganador ")){
     const id = texto.replace("Ganador ","");
@@ -442,7 +403,7 @@ function renderGrupos(){
                 <div class="partido-linea">
                   <span class="equipo-local">${p.local}</span>
                   <strong class="resultado-fijo">${r.local}</strong>
-                  <span>-</span>
+                  <span class="separador-goles">-</span>
                   <strong class="resultado-fijo">${r.visitante}</strong>
                   <span class="equipo-visitante">${p.visitante}</span>
                 </div>
@@ -496,45 +457,37 @@ function renderGrupos(){
   });
 }
 
-function renderTerceros(){
-  const container = document.getElementById("terceros-container");
+function renderClasificados(){
+  const container = document.getElementById("clasificados-container");
 
-  const terceros = Object.keys(equiposPorGrupo)
-    .map(g=>calcularTabla(g)[2])
-    .sort(ordenarTabla);
+  const clasificados = [
+    "🇿🇦 Sudáfrica","🇨🇦 Canadá",
+    "🇧🇷 Brasil","🇯🇵 Japón",
+    "🇩🇪 Alemania","🇵🇾 Paraguay",
+    "🇳🇱 Países Bajos","🇲🇦 Marruecos",
+    "🇨🇮 Costa de Marfil","🇳🇴 Noruega",
+    "🇫🇷 Francia","🇸🇪 Suecia",
+    "🇲🇽 México","🇪🇨 Ecuador",
+    "🏴 Inglaterra","🇨🇩 RD Congo",
+    "🇧🇪 Bélgica","🇸🇳 Senegal",
+    "🇺🇸 Estados Unidos","🇧🇦 Bosnia y Herzegovina",
+    "🇪🇸 España","🇦🇹 Austria",
+    "🇵🇹 Portugal","🇭🇷 Croacia",
+    "🇨🇭 Suiza","🇩🇿 Argelia",
+    "🇦🇺 Australia","🇪🇬 Egipto",
+    "🇦🇷 Argentina","🇨🇻 Cabo Verde",
+    "🇨🇴 Colombia","🇬🇭 Ghana"
+  ];
 
   container.innerHTML = `
-    <div class="terceros-card">
-      <div class="tabla-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Equipo</th>
-              <th>Grupo</th>
-              <th>PJ</th>
-              <th>DG</th>
-              <th>GF</th>
-              <th>PTS</th>
-              <th>Estado</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            ${terceros.map((t,i)=>`
-              <tr>
-                <td>${i+1}</td>
-                <td>${formatearEquipo(t.equipo)}</td>
-                <td>${t.grupo}</td>
-                <td>${t.pj}</td>
-                <td>${t.dg}</td>
-                <td>${t.gf}</td>
-                <td><strong>${t.pts}</strong></td>
-                <td>${i < 8 ? "Clasifica" : "Eliminado"}</td>
-              </tr>
-            `).join("")}
-          </tbody>
-        </table>
+    <div class="clasificados-card">
+      <div class="clasificados-grid">
+        ${clasificados.map((equipo,i)=>`
+          <div class="clasificado-chip">
+            <span class="clasificado-numero">${i+1}</span>
+            ${formatearEquipo(equipo)}
+          </div>
+        `).join("")}
       </div>
     </div>
   `;
@@ -581,7 +534,7 @@ function renderKnockout(){
                 ${pendiente ? "disabled" : ""}
               >
 
-              <span>-</span>
+              <span class="separador-goles">-</span>
 
               <input 
                 type="number" 
@@ -661,10 +614,8 @@ function renderKnockout(){
 
 function render(){
   renderGrupos();
-  renderTerceros();
+  renderClasificados();
   renderKnockout();
 }
-
-
 
 render();
