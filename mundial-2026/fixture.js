@@ -24,78 +24,64 @@ const partidos = [
   {id:"M06",grupo:"C",fecha:"13 junio",sede:"New York New Jersey",local:"🇧🇷 Brasil",visitante:"🇲🇦 Marruecos"},
   {id:"M07",grupo:"C",fecha:"13 junio",sede:"Boston",local:"🇭🇹 Haití",visitante:"🏴 Escocia"},
   {id:"M08",grupo:"D",fecha:"13 junio",sede:"Vancouver",local:"🇦🇺 Australia",visitante:"🇹🇷 Turquía"},
-
   {id:"M09",grupo:"E",fecha:"14 junio",sede:"Houston",local:"🇩🇪 Alemania",visitante:"🇨🇼 Curazao"},
   {id:"M10",grupo:"F",fecha:"14 junio",sede:"Dallas",local:"🇳🇱 Países Bajos",visitante:"🇯🇵 Japón"},
   {id:"M11",grupo:"E",fecha:"14 junio",sede:"Philadelphia",local:"🇨🇮 Costa de Marfil",visitante:"🇪🇨 Ecuador"},
   {id:"M12",grupo:"F",fecha:"14 junio",sede:"Monterrey",local:"🇸🇪 Suecia",visitante:"🇹🇳 Túnez"},
-
   {id:"M13",grupo:"H",fecha:"15 junio",sede:"Atlanta",local:"🇪🇸 España",visitante:"🇨🇻 Cabo Verde"},
   {id:"M14",grupo:"G",fecha:"15 junio",sede:"Seattle",local:"🇧🇪 Bélgica",visitante:"🇪🇬 Egipto"},
   {id:"M15",grupo:"H",fecha:"15 junio",sede:"Miami",local:"🇸🇦 Arabia Saudita",visitante:"🇺🇾 Uruguay"},
   {id:"M16",grupo:"G",fecha:"15 junio",sede:"Los Ángeles",local:"🇮🇷 Irán",visitante:"🇳🇿 Nueva Zelanda"},
-
   {id:"M17",grupo:"I",fecha:"16 junio",sede:"New York New Jersey",local:"🇫🇷 Francia",visitante:"🇸🇳 Senegal"},
   {id:"M18",grupo:"I",fecha:"16 junio",sede:"Boston",local:"🇮🇶 Irak",visitante:"🇳🇴 Noruega"},
   {id:"M19",grupo:"J",fecha:"16 junio",sede:"Kansas City",local:"🇦🇷 Argentina",visitante:"🇩🇿 Argelia"},
   {id:"M20",grupo:"J",fecha:"16 junio",sede:"San Francisco Bay Area",local:"🇦🇹 Austria",visitante:"🇯🇴 Jordania"},
-
   {id:"M21",grupo:"K",fecha:"17 junio",sede:"Houston",local:"🇵🇹 Portugal",visitante:"🇨🇩 RD Congo"},
   {id:"M22",grupo:"L",fecha:"17 junio",sede:"Dallas",local:"🏴 Inglaterra",visitante:"🇭🇷 Croacia"},
   {id:"M23",grupo:"L",fecha:"17 junio",sede:"Toronto",local:"🇬🇭 Ghana",visitante:"🇵🇦 Panamá"},
   {id:"M24",grupo:"K",fecha:"17 junio",sede:"Ciudad de México",local:"🇺🇿 Uzbekistán",visitante:"🇨🇴 Colombia"},
-
   {id:"M25",grupo:"A",fecha:"18 junio",sede:"Atlanta",local:"🇨🇿 Rep. Checa",visitante:"🇿🇦 Sudáfrica"},
   {id:"M26",grupo:"B",fecha:"18 junio",sede:"Los Ángeles",local:"🇨🇭 Suiza",visitante:"🇧🇦 Bosnia y Herzegovina"},
   {id:"M27",grupo:"B",fecha:"18 junio",sede:"Vancouver",local:"🇨🇦 Canadá",visitante:"🇶🇦 Qatar"},
   {id:"M28",grupo:"A",fecha:"18 junio",sede:"Guadalajara",local:"🇲🇽 México",visitante:"🇰🇷 Corea del Sur"},
-
   {id:"M29",grupo:"D",fecha:"19 junio",sede:"Seattle",local:"🇺🇸 Estados Unidos",visitante:"🇦🇺 Australia"},
   {id:"M30",grupo:"C",fecha:"19 junio",sede:"Boston",local:"🏴 Escocia",visitante:"🇲🇦 Marruecos"},
   {id:"M31",grupo:"C",fecha:"19 junio",sede:"Philadelphia",local:"🇧🇷 Brasil",visitante:"🇭🇹 Haití"},
   {id:"M32",grupo:"D",fecha:"19 junio",sede:"San Francisco Bay Area",local:"🇹🇷 Turquía",visitante:"🇵🇾 Paraguay"},
-
   {id:"M33",grupo:"F",fecha:"20 junio",sede:"Houston",local:"🇳🇱 Países Bajos",visitante:"🇸🇪 Suecia"},
   {id:"M34",grupo:"E",fecha:"20 junio",sede:"Toronto",local:"🇩🇪 Alemania",visitante:"🇨🇮 Costa de Marfil"},
   {id:"M35",grupo:"E",fecha:"20 junio",sede:"Kansas City",local:"🇪🇨 Ecuador",visitante:"🇨🇼 Curazao"},
   {id:"M36",grupo:"F",fecha:"20 junio",sede:"Monterrey",local:"🇹🇳 Túnez",visitante:"🇯🇵 Japón"},
-
   {id:"M37",grupo:"H",fecha:"21 junio",sede:"Atlanta",local:"🇪🇸 España",visitante:"🇸🇦 Arabia Saudita"},
   {id:"M38",grupo:"G",fecha:"21 junio",sede:"Los Ángeles",local:"🇧🇪 Bélgica",visitante:"🇮🇷 Irán"},
   {id:"M39",grupo:"H",fecha:"21 junio",sede:"Miami",local:"🇺🇾 Uruguay",visitante:"🇨🇻 Cabo Verde"},
   {id:"M40",grupo:"G",fecha:"21 junio",sede:"Vancouver",local:"🇳🇿 Nueva Zelanda",visitante:"🇪🇬 Egipto"},
-
   {id:"M41",grupo:"J",fecha:"22 junio",sede:"Dallas",local:"🇦🇷 Argentina",visitante:"🇦🇹 Austria"},
   {id:"M42",grupo:"I",fecha:"22 junio",sede:"Philadelphia",local:"🇫🇷 Francia",visitante:"🇮🇶 Irak"},
   {id:"M43",grupo:"I",fecha:"22 junio",sede:"New York New Jersey",local:"🇳🇴 Noruega",visitante:"🇸🇳 Senegal"},
   {id:"M44",grupo:"J",fecha:"22 junio",sede:"San Francisco Bay Area",local:"🇯🇴 Jordania",visitante:"🇩🇿 Argelia"},
-
   {id:"M45",grupo:"K",fecha:"23 junio",sede:"Houston",local:"🇵🇹 Portugal",visitante:"🇺🇿 Uzbekistán"},
   {id:"M46",grupo:"L",fecha:"23 junio",sede:"Boston",local:"🏴 Inglaterra",visitante:"🇬🇭 Ghana"},
   {id:"M47",grupo:"L",fecha:"23 junio",sede:"Toronto",local:"🇵🇦 Panamá",visitante:"🇭🇷 Croacia"},
   {id:"M48",grupo:"K",fecha:"23 junio",sede:"Guadalajara",local:"🇨🇴 Colombia",visitante:"🇨🇩 RD Congo"},
-
   {id:"M49",grupo:"B",fecha:"24 junio",sede:"Vancouver",local:"🇨🇭 Suiza",visitante:"🇨🇦 Canadá"},
   {id:"M50",grupo:"B",fecha:"24 junio",sede:"Seattle",local:"🇧🇦 Bosnia y Herzegovina",visitante:"🇶🇦 Qatar"},
   {id:"M51",grupo:"C",fecha:"24 junio",sede:"Miami",local:"🏴 Escocia",visitante:"🇧🇷 Brasil"},
   {id:"M52",grupo:"C",fecha:"24 junio",sede:"Atlanta",local:"🇲🇦 Marruecos",visitante:"🇭🇹 Haití"},
   {id:"M53",grupo:"A",fecha:"24 junio",sede:"Ciudad de México",local:"🇨🇿 Rep. Checa",visitante:"🇲🇽 México"},
   {id:"M54",grupo:"A",fecha:"24 junio",sede:"Monterrey",local:"🇿🇦 Sudáfrica",visitante:"🇰🇷 Corea del Sur"},
-
   {id:"M55",grupo:"E",fecha:"25 junio",sede:"New York New Jersey",local:"🇪🇨 Ecuador",visitante:"🇩🇪 Alemania"},
   {id:"M56",grupo:"E",fecha:"25 junio",sede:"Philadelphia",local:"🇨🇼 Curazao",visitante:"🇨🇮 Costa de Marfil"},
   {id:"M57",grupo:"F",fecha:"25 junio",sede:"Dallas",local:"🇯🇵 Japón",visitante:"🇸🇪 Suecia"},
   {id:"M58",grupo:"F",fecha:"25 junio",sede:"Kansas City",local:"🇹🇳 Túnez",visitante:"🇳🇱 Países Bajos"},
   {id:"M59",grupo:"D",fecha:"25 junio",sede:"Los Ángeles",local:"🇹🇷 Turquía",visitante:"🇺🇸 Estados Unidos"},
   {id:"M60",grupo:"D",fecha:"25 junio",sede:"San Francisco Bay Area",local:"🇵🇾 Paraguay",visitante:"🇦🇺 Australia"},
-
   {id:"M61",grupo:"I",fecha:"26 junio",sede:"Boston",local:"🇳🇴 Noruega",visitante:"🇫🇷 Francia"},
   {id:"M62",grupo:"I",fecha:"26 junio",sede:"Toronto",local:"🇸🇳 Senegal",visitante:"🇮🇶 Irak"},
   {id:"M63",grupo:"H",fecha:"26 junio",sede:"Houston",local:"🇨🇻 Cabo Verde",visitante:"🇸🇦 Arabia Saudita"},
   {id:"M64",grupo:"H",fecha:"26 junio",sede:"Guadalajara",local:"🇺🇾 Uruguay",visitante:"🇪🇸 España"},
   {id:"M65",grupo:"G",fecha:"26 junio",sede:"Seattle",local:"🇪🇬 Egipto",visitante:"🇮🇷 Irán"},
   {id:"M66",grupo:"G",fecha:"26 junio",sede:"Vancouver",local:"🇳🇿 Nueva Zelanda",visitante:"🇧🇪 Bélgica"},
-
   {id:"M67",grupo:"L",fecha:"27 junio",sede:"New York New Jersey",local:"🇵🇦 Panamá",visitante:"🏴 Inglaterra"},
   {id:"M68",grupo:"L",fecha:"27 junio",sede:"Philadelphia",local:"🇭🇷 Croacia",visitante:"🇬🇭 Ghana"},
   {id:"M69",grupo:"K",fecha:"27 junio",sede:"Miami",local:"🇨🇴 Colombia",visitante:"🇵🇹 Portugal"},
@@ -103,6 +89,81 @@ const partidos = [
   {id:"M71",grupo:"J",fecha:"27 junio",sede:"Kansas City",local:"🇩🇿 Argelia",visitante:"🇦🇹 Austria"},
   {id:"M72",grupo:"J",fecha:"27 junio",sede:"Dallas",local:"🇯🇴 Jordania",visitante:"🇦🇷 Argentina"}
 ];
+
+const RESULTADOS_GRUPOS_FIFA = {
+  M01:{local:"2",visitante:"0",ganador:"🇲🇽 México",perdedor:"🇿🇦 Sudáfrica"},
+  M02:{local:"2",visitante:"1",ganador:"🇰🇷 Corea del Sur",perdedor:"🇨🇿 Rep. Checa"},
+  M03:{local:"1",visitante:"1",ganador:"",perdedor:""},
+  M04:{local:"4",visitante:"1",ganador:"🇺🇸 Estados Unidos",perdedor:"🇵🇾 Paraguay"},
+  M05:{local:"1",visitante:"1",ganador:"",perdedor:""},
+  M06:{local:"1",visitante:"1",ganador:"",perdedor:""},
+  M07:{local:"0",visitante:"1",ganador:"🏴 Escocia",perdedor:"🇭🇹 Haití"},
+  M08:{local:"2",visitante:"0",ganador:"🇦🇺 Australia",perdedor:"🇹🇷 Turquía"},
+  M09:{local:"7",visitante:"1",ganador:"🇩🇪 Alemania",perdedor:"🇨🇼 Curazao"},
+  M10:{local:"2",visitante:"2",ganador:"",perdedor:""},
+  M11:{local:"1",visitante:"0",ganador:"🇨🇮 Costa de Marfil",perdedor:"🇪🇨 Ecuador"},
+  M12:{local:"5",visitante:"1",ganador:"🇸🇪 Suecia",perdedor:"🇹🇳 Túnez"},
+  M13:{local:"0",visitante:"0",ganador:"",perdedor:""},
+  M14:{local:"1",visitante:"1",ganador:"",perdedor:""},
+  M15:{local:"1",visitante:"1",ganador:"",perdedor:""},
+  M16:{local:"2",visitante:"2",ganador:"",perdedor:""},
+  M17:{local:"3",visitante:"1",ganador:"🇫🇷 Francia",perdedor:"🇸🇳 Senegal"},
+  M18:{local:"1",visitante:"4",ganador:"🇳🇴 Noruega",perdedor:"🇮🇶 Irak"},
+  M19:{local:"3",visitante:"0",ganador:"🇦🇷 Argentina",perdedor:"🇩🇿 Argelia"},
+  M20:{local:"3",visitante:"1",ganador:"🇦🇹 Austria",perdedor:"🇯🇴 Jordania"},
+  M21:{local:"1",visitante:"1",ganador:"",perdedor:""},
+  M22:{local:"4",visitante:"2",ganador:"🏴 Inglaterra",perdedor:"🇭🇷 Croacia"},
+  M23:{local:"1",visitante:"0",ganador:"🇬🇭 Ghana",perdedor:"🇵🇦 Panamá"},
+  M24:{local:"1",visitante:"3",ganador:"🇨🇴 Colombia",perdedor:"🇺🇿 Uzbekistán"},
+  M25:{local:"1",visitante:"1",ganador:"",perdedor:""},
+  M26:{local:"4",visitante:"1",ganador:"🇨🇭 Suiza",perdedor:"🇧🇦 Bosnia y Herzegovina"},
+  M27:{local:"6",visitante:"0",ganador:"🇨🇦 Canadá",perdedor:"🇶🇦 Qatar"},
+  M28:{local:"1",visitante:"0",ganador:"🇲🇽 México",perdedor:"🇰🇷 Corea del Sur"},
+  M29:{local:"2",visitante:"0",ganador:"🇺🇸 Estados Unidos",perdedor:"🇦🇺 Australia"},
+  M30:{local:"0",visitante:"1",ganador:"🇲🇦 Marruecos",perdedor:"🏴 Escocia"},
+  M31:{local:"3",visitante:"0",ganador:"🇧🇷 Brasil",perdedor:"🇭🇹 Haití"},
+  M32:{local:"0",visitante:"1",ganador:"🇵🇾 Paraguay",perdedor:"🇹🇷 Turquía"},
+  M33:{local:"5",visitante:"1",ganador:"🇳🇱 Países Bajos",perdedor:"🇸🇪 Suecia"},
+  M34:{local:"2",visitante:"1",ganador:"🇩🇪 Alemania",perdedor:"🇨🇮 Costa de Marfil"},
+  M35:{local:"0",visitante:"0",ganador:"",perdedor:""},
+  M36:{local:"0",visitante:"4",ganador:"🇯🇵 Japón",perdedor:"🇹🇳 Túnez"},
+  M37:{local:"4",visitante:"0",ganador:"🇪🇸 España",perdedor:"🇸🇦 Arabia Saudita"},
+  M38:{local:"0",visitante:"0",ganador:"",perdedor:""},
+  M39:{local:"2",visitante:"2",ganador:"",perdedor:""},
+  M40:{local:"1",visitante:"3",ganador:"🇪🇬 Egipto",perdedor:"🇳🇿 Nueva Zelanda"},
+  M41:{local:"2",visitante:"0",ganador:"🇦🇷 Argentina",perdedor:"🇦🇹 Austria"},
+  M42:{local:"3",visitante:"0",ganador:"🇫🇷 Francia",perdedor:"🇮🇶 Irak"},
+  M43:{local:"3",visitante:"2",ganador:"🇳🇴 Noruega",perdedor:"🇸🇳 Senegal"},
+  M44:{local:"1",visitante:"2",ganador:"🇩🇿 Argelia",perdedor:"🇯🇴 Jordania"},
+  M45:{local:"5",visitante:"0",ganador:"🇵🇹 Portugal",perdedor:"🇺🇿 Uzbekistán"},
+  M46:{local:"0",visitante:"0",ganador:"",perdedor:""},
+  M47:{local:"0",visitante:"1",ganador:"🇭🇷 Croacia",perdedor:"🇵🇦 Panamá"},
+  M48:{local:"1",visitante:"0",ganador:"🇨🇴 Colombia",perdedor:"🇨🇩 RD Congo"},
+  M49:{local:"2",visitante:"1",ganador:"🇨🇭 Suiza",perdedor:"🇨🇦 Canadá"},
+  M50:{local:"3",visitante:"1",ganador:"🇧🇦 Bosnia y Herzegovina",perdedor:"🇶🇦 Qatar"},
+  M51:{local:"0",visitante:"3",ganador:"🇧🇷 Brasil",perdedor:"🏴 Escocia"},
+  M52:{local:"4",visitante:"2",ganador:"🇲🇦 Marruecos",perdedor:"🇭🇹 Haití"},
+  M53:{local:"0",visitante:"3",ganador:"🇲🇽 México",perdedor:"🇨🇿 Rep. Checa"},
+  M54:{local:"1",visitante:"0",ganador:"🇿🇦 Sudáfrica",perdedor:"🇰🇷 Corea del Sur"},
+  M55:{local:"2",visitante:"1",ganador:"🇪🇨 Ecuador",perdedor:"🇩🇪 Alemania"},
+  M56:{local:"0",visitante:"2",ganador:"🇨🇮 Costa de Marfil",perdedor:"🇨🇼 Curazao"},
+  M57:{local:"1",visitante:"1",ganador:"",perdedor:""},
+  M58:{local:"1",visitante:"3",ganador:"🇳🇱 Países Bajos",perdedor:"🇹🇳 Túnez"},
+  M59:{local:"3",visitante:"2",ganador:"🇹🇷 Turquía",perdedor:"🇺🇸 Estados Unidos"},
+  M60:{local:"0",visitante:"0",ganador:"",perdedor:""},
+  M61:{local:"1",visitante:"4",ganador:"🇫🇷 Francia",perdedor:"🇳🇴 Noruega"},
+  M62:{local:"5",visitante:"0",ganador:"🇸🇳 Senegal",perdedor:"🇮🇶 Irak"},
+  M63:{local:"0",visitante:"0",ganador:"",perdedor:""},
+  M64:{local:"0",visitante:"1",ganador:"🇪🇸 España",perdedor:"🇺🇾 Uruguay"},
+  M65:{local:"1",visitante:"1",ganador:"",perdedor:""},
+  M66:{local:"1",visitante:"5",ganador:"🇧🇪 Bélgica",perdedor:"🇳🇿 Nueva Zelanda"},
+  M67:{local:"0",visitante:"2",ganador:"🏴 Inglaterra",perdedor:"🇵🇦 Panamá"},
+  M68:{local:"2",visitante:"1",ganador:"🇭🇷 Croacia",perdedor:"🇬🇭 Ghana"},
+  M69:{local:"0",visitante:"0",ganador:"",perdedor:""},
+  M70:{local:"3",visitante:"1",ganador:"🇨🇩 RD Congo",perdedor:"🇺🇿 Uzbekistán"},
+  M71:{local:"3",visitante:"3",ganador:"",perdedor:""},
+  M72:{local:"1",visitante:"3",ganador:"🇦🇷 Argentina",perdedor:"🇯🇴 Jordania"}
+};
 
 const rondas = [
   {
@@ -175,14 +236,52 @@ const rondas = [
   }
 ];
 
-let resultados = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+function cargarResultadosIniciales(){
+  const guardado = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+  const eliminatoriasGuardadas = {};
 
-function faseGruposCompleta(){
-  return Object.keys(equiposPorGrupo).every(grupoCompleto);
+  Object.keys(guardado).forEach(id=>{
+    const numero = Number(id.replace("M",""));
+    if(numero >= 73){
+      eliminatoriasGuardadas[id] = guardado[id];
+    }
+  });
+
+  return {
+    ...RESULTADOS_GRUPOS_FIFA,
+    ...eliminatoriasGuardadas
+  };
 }
 
+let resultados = cargarResultadosIniciales();
+
 function guardar(){
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(resultados));
+  const soloEliminatorias = {};
+
+  Object.keys(resultados).forEach(id=>{
+    const numero = Number(id.replace("M",""));
+    if(numero >= 73){
+      soloEliminatorias[id] = resultados[id];
+    }
+  });
+
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(soloEliminatorias));
+}
+
+function faseGruposCompleta(){
+  return true;
+}
+
+function grupoCompleto(grupo){
+  return true;
+}
+
+function grupoTienePartidosCompletos(grupo){
+  return true;
+}
+
+function hayDatosParaTerceros(){
+  return true;
 }
 
 function formatearEquipo(equipo){
@@ -217,9 +316,9 @@ function calcularTabla(grupo){
   });
 
   partidos.filter(p=>p.grupo===grupo).forEach(p=>{
-    const r = resultados[p.id];
+    const r = RESULTADOS_GRUPOS_FIFA[p.id];
 
-    if(!r || r.local === "" || r.visitante === "" || r.local === undefined || r.visitante === undefined){
+    if(!r){
       return;
     }
 
@@ -270,14 +369,13 @@ function obtenerClasificados(){
 
   Object.keys(equiposPorGrupo).forEach(grupo=>{
     const tabla = calcularTabla(grupo);
-    const completo = grupoCompleto(grupo);
 
     data[grupo] = {
-      primero: completo ? tabla[0] : null,
-      segundo: completo ? tabla[1] : null,
-      tercero: completo ? tabla[2] : null,
+      primero: tabla[0],
+      segundo: tabla[1],
+      tercero: tabla[2],
       tabla,
-      completo
+      completo:true
     };
   });
 
@@ -286,54 +384,12 @@ function obtenerClasificados(){
 
 function obtenerMejoresTerceros(){
   return Object.keys(equiposPorGrupo)
-    .filter(grupoCompleto)
     .map(g=>calcularTabla(g)[2])
     .sort(ordenarTabla)
     .slice(0,8);
 }
 
-function grupoTienePartidosCompletos(grupo){
-  return partidos
-    .filter(p=>p.grupo===grupo)
-    .some(p=>{
-      const r = resultados[p.id];
-      return r && r.local !== "" && r.visitante !== "" && r.local !== undefined && r.visitante !== undefined;
-    });
-}
-
-function grupoCompleto(grupo){
-  return partidos
-    .filter(p=>p.grupo===grupo)
-    .every(p=>{
-      const r = resultados[p.id];
-      return r && r.local !== "" && r.visitante !== "" && r.local !== undefined && r.visitante !== undefined;
-    });
-}
-
-function hayDatosParaTerceros(){
-  return Object.keys(equiposPorGrupo).some(grupoTienePartidosCompletos);
-}
-
 function resolverTexto(texto){
-  const clasificados = obtenerClasificados();
-  const mejoresTerceros = obtenerMejoresTerceros();
-
-  if(texto.startsWith("1° Grupo ")){
-    const g = texto.replace("1° Grupo ","");
-    return clasificados[g]?.primero?.equipo || texto;
-  }
-
-  if(texto.startsWith("2° Grupo ")){
-    const g = texto.replace("2° Grupo ","");
-    return clasificados[g]?.segundo?.equipo || texto;
-  }
-
-  if(texto.startsWith("3° Grupo ")){
-    const permitidos = texto.replace("3° Grupo ","").split("/");
-    const candidato = mejoresTerceros.find(t=>permitidos.includes(t.grupo));
-    return candidato ? candidato.equipo : texto;
-  }
-
   if(texto.startsWith("Ganador ")){
     const id = texto.replace("Ganador ","");
     return resultados[id]?.ganador || texto;
@@ -372,10 +428,10 @@ function renderGrupos(){
       <div class="grupo-contenido">
 
         <div class="bloque-grupo">
-          <h4>📅 Partidos del grupo</h4>
+          <h4>📅 Resultados del grupo</h4>
 
           ${partidosGrupo.map(p=>{
-            const r = resultados[p.id] || {local:"", visitante:""};
+            const r = RESULTADOS_GRUPOS_FIFA[p.id];
 
             return `
               <div class="partido">
@@ -385,25 +441,9 @@ function renderGrupos(){
 
                 <div class="partido-linea">
                   <span class="equipo-local">${p.local}</span>
-
-                  <input 
-                    type="number" 
-                    min="0" 
-                    value="${r.local ?? ""}" 
-                    data-id="${p.id}" 
-                    data-lado="local"
-                  >
-
+                  <strong class="resultado-fijo">${r.local}</strong>
                   <span>-</span>
-
-                  <input 
-                    type="number" 
-                    min="0" 
-                    value="${r.visitante ?? ""}" 
-                    data-id="${p.id}" 
-                    data-lado="visitante"
-                  >
-
+                  <strong class="resultado-fijo">${r.visitante}</strong>
                   <span class="equipo-visitante">${p.visitante}</span>
                 </div>
               </div>
@@ -454,77 +494,12 @@ function renderGrupos(){
 
     container.appendChild(card);
   });
-
-  document.querySelectorAll("input[data-id]").forEach(input=>{
-    input.addEventListener("input", e=>{
-      const id = e.target.dataset.id;
-      const lado = e.target.dataset.lado;
-
-      if(!resultados[id]){
-        resultados[id] = {};
-      }
-
-      resultados[id][lado] = e.target.value;
-
-      const partido = partidos.find(p=>p.id===id);
-
-      if(partido){
-        const r = resultados[id];
-
-        if(r.local !== "" && r.visitante !== "" && r.local !== undefined && r.visitante !== undefined){
-          const gl = Number(r.local);
-          const gv = Number(r.visitante);
-
-          if(gl > gv){
-            r.ganador = partido.local;
-            r.perdedor = partido.visitante;
-          }else if(gl < gv){
-            r.ganador = partido.visitante;
-            r.perdedor = partido.local;
-          }else{
-            r.ganador = "";
-            r.perdedor = "";
-          }
-        }
-      }
-
-      const scrollActual = window.scrollY;
-
-guardar();
-
-requestAnimationFrame(() => {
-  render();
-
-  requestAnimationFrame(() => {
-    window.scrollTo({
-      top: scrollActual,
-      behavior: "instant"
-    });
-  });
-});
-    });
-  });
 }
 
 function renderTerceros(){
   const container = document.getElementById("terceros-container");
 
-  const gruposTerminados = faseGruposCompleta();
-  const gruposCompletos = Object.keys(equiposPorGrupo).filter(grupoCompleto);
-
-  if(gruposCompletos.length === 0){
-    container.innerHTML = `
-      <div class="terceros-card">
-        <p>
-          Todavía no hay datos suficientes para calcular los mejores terceros.
-          Completá los resultados de la fase de grupos para ver esta tabla.
-        </p>
-      </div>
-    `;
-    return;
-  }
-
-  const terceros = gruposCompletos
+  const terceros = Object.keys(equiposPorGrupo)
     .map(g=>calcularTabla(g)[2])
     .sort(ordenarTabla);
 
@@ -555,7 +530,7 @@ function renderTerceros(){
                 <td>${t.dg}</td>
                 <td>${t.gf}</td>
                 <td><strong>${t.pts}</strong></td>
-                <td>${gruposTerminados ? (i < 8 ? "Clasifica" : "Eliminado") : "Pendiente"}</td>
+                <td>${i < 8 ? "Clasifica" : "Eliminado"}</td>
               </tr>
             `).join("")}
           </tbody>
@@ -568,21 +543,6 @@ function renderTerceros(){
 function renderKnockout(){
   const container = document.getElementById("knockout-container");
   container.innerHTML = "";
-
-  const gruposCompletos = Object.keys(equiposPorGrupo).filter(grupoCompleto);
-const gruposTerminados = faseGruposCompleta();
-
-  if(!gruposTerminados){
-    container.innerHTML = `
-      <div class="ronda">
-        <h3>Eliminatorias</h3>
-        <p>
-  Las eliminatorias se armarán automáticamente cuando completes todos los resultados de la fase de grupos.
-</p>
-      </div>
-    `;
-    return;
-  }
 
   rondas.forEach(ronda=>{
     const div = document.createElement("div");
@@ -597,6 +557,11 @@ const gruposTerminados = faseGruposCompleta();
         const equipoA = resolverTexto(a);
         const equipoB = resolverTexto(b);
         const r = resultados[id] || {local:"", visitante:""};
+
+        const pendiente = equipoA.includes("Ganador") ||
+                          equipoA.includes("Perdedor") ||
+                          equipoB.includes("Ganador") ||
+                          equipoB.includes("Perdedor");
 
         return `
           <div class="llave">
@@ -613,7 +578,7 @@ const gruposTerminados = faseGruposCompleta();
                 data-lado="local" 
                 data-a="${equipoA}" 
                 data-b="${equipoB}"
-                ${equipoA.includes("Grupo") || equipoA.includes("Ganador") || equipoB.includes("Grupo") || equipoB.includes("Ganador") ? "disabled" : ""}
+                ${pendiente ? "disabled" : ""}
               >
 
               <span>-</span>
@@ -626,15 +591,15 @@ const gruposTerminados = faseGruposCompleta();
                 data-lado="visitante" 
                 data-a="${equipoA}" 
                 data-b="${equipoB}"
-                ${equipoA.includes("Grupo") || equipoA.includes("Ganador") || equipoB.includes("Grupo") || equipoB.includes("Ganador") ? "disabled" : ""}
+                ${pendiente ? "disabled" : ""}
               >
 
               <span class="equipo-visitante">${equipoB}</span>
             </div>
 
             <small>
-              ${equipoA.includes("Grupo") || equipoB.includes("Grupo") || equipoA.includes("Ganador") || equipoB.includes("Ganador")
-                ? "Pendiente de clasificación."
+              ${pendiente
+                ? "Pendiente de ganador anterior."
                 : "En eliminatorias, si hay empate, cargá el resultado final que defina al ganador."}
             </small>
           </div>
@@ -678,18 +643,18 @@ const gruposTerminados = faseGruposCompleta();
 
       const scrollActual = window.scrollY;
 
-guardar();
+      guardar();
 
-requestAnimationFrame(() => {
-  render();
+      requestAnimationFrame(() => {
+        render();
 
-  requestAnimationFrame(() => {
-    window.scrollTo({
-      top: scrollActual,
-      behavior: "instant"
-    });
-  });
-});
+        requestAnimationFrame(() => {
+          window.scrollTo({
+            top: scrollActual,
+            behavior: "instant"
+          });
+        });
+      });
     });
   });
 }
@@ -700,59 +665,6 @@ function render(){
   renderKnockout();
 }
 
-const modalReset =
-document.getElementById("modal-reset");
 
-document.getElementById("btn-borrar")
-.addEventListener("click",()=>{
-
-  modalReset.classList.add("activo");
-
-});
-
-document.getElementById("cancelar-reset")
-.addEventListener("click",()=>{
-
-  modalReset.classList.remove("activo");
-
-});
-
-document.getElementById("confirmar-reset")
-.addEventListener("click",()=>{
-
-  resultados = {};
-
-  localStorage.removeItem(STORAGE_KEY);
-
-  guardar();
-
-  modalReset.classList.remove("activo");
-
-  render();
-
-});
 
 render();
-
-const modalBienvenida = document.getElementById("modal-bienvenida");
-
-document.getElementById("cerrar-bienvenida")
-.addEventListener("click",()=>{
-
-  modalBienvenida.classList.remove("activo");
-
-});
-
-function limpiarSoloEliminatoriasGuardadas(){
-  Object.keys(resultados).forEach(id=>{
-    const numero = Number(id.replace("M",""));
-
-    if(numero >= 73){
-      delete resultados[id];
-    }
-  });
-
-  guardar();
-  render();
-}
-
