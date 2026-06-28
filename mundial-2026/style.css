@@ -291,20 +291,28 @@ tbody tr:hover{
 }
 
 .partido-linea{
-  display:grid;
-  grid-template-columns:1fr 55px 20px 55px 1fr;
-  gap:8px;
-  align-items:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
 }
 
 .equipo-local{
-  text-align:right;
-  font-weight:bold;
+    flex:1;
+    text-align:right;
 }
 
 .equipo-visitante{
-  text-align:left;
-  font-weight:bold;
+    flex:1;
+    text-align:left;
+}
+
+.resultado-fijo{
+    display:inline-block;
+    min-width:24px;
+    text-align:center;
+    font-weight:700;
+    font-size:1.1rem;
 }
 
 .partido input,
