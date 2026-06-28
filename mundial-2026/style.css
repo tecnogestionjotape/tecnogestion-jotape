@@ -112,14 +112,20 @@ header{
 }
 
 .fixture-nav a{
+  width:120px;
+  height:38px;
   color:white;
   text-decoration:none;
   background:#1E22AA;
-  padding:9px 14px;
   border-radius:30px;
-  font-size:.9rem;
+  font-size:.85rem;
   font-weight:bold;
   transition:.25s;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 
 .fixture-nav a:hover{
