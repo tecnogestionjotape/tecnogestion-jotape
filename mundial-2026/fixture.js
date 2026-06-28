@@ -111,32 +111,32 @@ const rondas = [
     partidos:[
       ["M73","2° Grupo A","2° Grupo B","28 junio","Los Ángeles"],
       ["M74","1° Grupo C","2° Grupo F","29 junio","Houston"],
-      ["M75","1° Grupo E","3° Grupo A/B/C/D/F","29 junio","Boston"],
+      ["M75","1° Grupo E","2° Grupo D","29 junio","Boston"],
       ["M76","1° Grupo F","2° Grupo C","29 junio","Monterrey"],
       ["M77","2° Grupo E","2° Grupo I","30 junio","Dallas"],
-      ["M78","1° Grupo I","3° Grupo C/D/F/G/H","30 junio","New York New Jersey"],
-      ["M79","1° Grupo A","3° Grupo C/E/F/H/I","30 junio","Ciudad de México"],
-      ["M80","1° Grupo L","3° Grupo E/H/I/J/K","1 julio","Atlanta"],
-      ["M81","1° Grupo G","3° Grupo A/E/H/I/J","1 julio","Seattle"],
-      ["M82","1° Grupo D","3° Grupo B/E/F/I/J","1 julio","San Francisco Bay Area"],
+      ["M78","1° Grupo I","3° Grupo F","30 junio","New York New Jersey"],
+      ["M79","1° Grupo A","3° Grupo E","30 junio","Ciudad de México"],
+      ["M80","1° Grupo L","3° Grupo K","1 julio","Atlanta"],
+      ["M81","1° Grupo G","3° Grupo I","1 julio","Seattle"],
+      ["M82","1° Grupo D","3° Grupo B","1 julio","San Francisco Bay Area"],
       ["M83","1° Grupo H","2° Grupo J","2 julio","Los Ángeles"],
-      ["M84","2° Grupo K","2° Grupo L","2 julio","Toronto"],
-      ["M85","1° Grupo B","3° Grupo E/F/G/I/J","2 julio","Vancouver"],
+      ["M84","1° Grupo K","2° Grupo L","2 julio","Toronto"],
+      ["M85","1° Grupo B","3° Grupo J","2 julio","Vancouver"],
       ["M86","2° Grupo D","2° Grupo G","3 julio","Dallas"],
       ["M87","1° Grupo J","2° Grupo H","3 julio","Miami"],
-      ["M88","1° Grupo K","3° Grupo D/E/I/J/L","3 julio","Kansas City"]
+      ["M88","2° Grupo K","3° Grupo L","3 julio","Kansas City"]
     ]
   },
   {
     nombre:"Octavos de final",
     idHtml:"octavos",
     partidos:[
-      ["M89","Ganador M73","Ganador M74","4 julio","Houston"],
+      ["M89","Ganador M73","Ganador M76","4 julio","Houston"],
       ["M90","Ganador M75","Ganador M78","4 julio","Philadelphia"],
-      ["M91","Ganador M76","Ganador M77","5 julio","New York New Jersey"],
+      ["M91","Ganador M74","Ganador M77","5 julio","New York New Jersey"],
       ["M92","Ganador M79","Ganador M80","5 julio","Ciudad de México"],
-      ["M93","Ganador M83","Ganador M84","6 julio","Dallas"],
-      ["M94","Ganador M81","Ganador M82","6 julio","Seattle"],
+      ["M93","Ganador M84","Ganador M83","6 julio","Dallas"],
+      ["M94","Ganador M82","Ganador M81","6 julio","Seattle"],
       ["M95","Ganador M87","Ganador M86","7 julio","Atlanta"],
       ["M96","Ganador M85","Ganador M88","7 julio","Vancouver"]
     ]
@@ -145,7 +145,7 @@ const rondas = [
     nombre:"Cuartos de final",
     idHtml:"cuartos",
     partidos:[
-      ["M97","Ganador M89","Ganador M90","9 julio","Boston"],
+      ["M97","Ganador M90","Ganador M89","9 julio","Boston"],
       ["M98","Ganador M93","Ganador M94","10 julio","Los Ángeles"],
       ["M99","Ganador M91","Ganador M92","11 julio","Miami"],
       ["M100","Ganador M95","Ganador M96","11 julio","Kansas City"]
@@ -742,4 +742,17 @@ document.getElementById("cerrar-bienvenida")
   modalBienvenida.classList.remove("activo");
 
 });
+
+function limpiarSoloEliminatoriasGuardadas(){
+  Object.keys(resultados).forEach(id=>{
+    const numero = Number(id.replace("M",""));
+
+    if(numero >= 73){
+      delete resultados[id];
+    }
+  });
+
+  guardar();
+  render();
+}
 
