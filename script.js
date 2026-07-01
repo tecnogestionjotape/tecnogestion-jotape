@@ -250,7 +250,7 @@ const translations = {
     contactTagline: "CONTACT",
     contactTitle: "Need help with technology?",
     contactDescription:
-      "I'm available to help you with technical support, software development, process automation, networking, connectivity and technology consulting. Choose the most convinient contact method.",
+      "I'm available to help you with technical support, software development, process automation, networking, connectivity and technology consulting. Choose the most convenient contact method.",
     contactCardTitle1: "WhatsApp",
     contactCardDesc1: "Fast and personalized assistance",
     contactCardTitle2: "Schedule Meeting",
