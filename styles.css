@@ -157,18 +157,21 @@ h1 span {
 }
 .hero-btns {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
-  max-width: 1000px;
+  width: 100%;
 }
+
 .hero-btns a {
-  width: 220px;
+  width: calc((100% - 40px) / 3);
   min-height: 74px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 14px;
   text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .btn-orange,
 .btn-outline {
