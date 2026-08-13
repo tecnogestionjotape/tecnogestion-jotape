@@ -410,8 +410,7 @@ function setLanguage(lang) {
     translations[lang].btnRepair;
   document.getElementById("btn-services").textContent =
     translations[lang].btnServices;
-  document.getElementById("btn-worldcup").textContent =
-    translations[lang].btnWorldcup;
+
   document.getElementById("ot-tagline").textContent =
     translations[lang].otTagline;
   document.getElementById("ot-title").textContent = translations[lang].otTitle;
