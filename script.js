@@ -167,7 +167,7 @@ const translations = {
     heroDescription:
       "IT support, networks, <span>custom software</span> development and process automation for individuals, professionals and business.",
     btnMeeting: "Schedule meeting",
-    btnRepair: "Repair status",
+    btnRepair: "Repair Status",
     btnServices: "View services",
     btnWorldcup: "🏆 2026 World Cup Fixture",
     otTagline: "ONLINE INQUIRY",
