@@ -2410,30 +2410,6 @@ footer,
   }
 }
 
-.btn-fixture {
-  background: #ff5c00;
-
-  color: white;
-
-  text-decoration: none;
-
-  font-weight: 800;
-
-  font-size: 1rem;
-
-  border-radius: 16px;
-
-  box-shadow: 0 12px 30px rgba(255, 92, 0, 0.35);
-
-  transition: 0.3s;
-}
-
-.btn-fixture:hover {
-  transform: translateY(-3px);
-
-  background: #ff6f00;
-}
-
 .language-selector {
   display: flex;
 

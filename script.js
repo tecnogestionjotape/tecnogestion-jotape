@@ -57,7 +57,6 @@ const translations = {
     btnMeeting: "Agendar reunión",
     btnRepair: "Consultar reparación",
     btnServices: "Ver servicios",
-    btnWorldcup: "🏆 Fixture Mundial 2026",
     otTagline: "CONSULTA ONLINE",
     otTitle: "¿Tu equipo está en reparación?",
     otDescription:
@@ -169,7 +168,6 @@ const translations = {
     btnMeeting: "Schedule meeting",
     btnRepair: "Repair Status",
     btnServices: "View services",
-    btnWorldcup: "🏆 2026 World Cup Fixture",
     otTagline: "ONLINE INQUIRY",
     otTitle: "Is your equipment under repair?",
     otDescription:
@@ -280,7 +278,6 @@ const translations = {
     btnMeeting: "Agendar reunião",
     btnRepair: "Consultar reparo",
     btnServices: "Ver serviços",
-    btnWorldcup: "🏆 Copa do Mundo 2026",
     otTagline: "CONSULTA ONLINE",
     otTitle: "Seu equipamento está em reparo?",
     otDescription:
@@ -628,3 +625,25 @@ setLanguage(savedLanguage);
 document.querySelectorAll(`[data-lang="${savedLanguage}"]`).forEach((b) => {
   b.classList.add("active");
 });
+
+
+/* Enlaces WhatsApp: Web directo en computadora; wa.me en dispositivos móviles.
+   Los href originales del HTML son el respaldo cuando JavaScript está deshabilitado. */
+(function configurarEnlacesWhatsApp() {
+  const ua = navigator.userAgent || "";
+  const esMovil = /Android|iPhone|iPad|iPod|Mobile|Windows Phone/i.test(ua) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  if (esMovil) return;
+
+  document.querySelectorAll('a[data-whatsapp-link]').forEach((enlace) => {
+    const original = new URL(enlace.href);
+    if (original.hostname !== "wa.me") return;
+    const numero = original.pathname.replace(/\D/g, "");
+    if (!numero) return;
+    const destino = new URL("https://web.whatsapp.com/send");
+    destino.searchParams.set("phone", numero);
+    const mensaje = original.searchParams.get("text");
+    if (mensaje !== null) destino.searchParams.set("text", mensaje);
+    enlace.href = destino.toString();
+  });
+})();
